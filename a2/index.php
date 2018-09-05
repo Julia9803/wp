@@ -20,9 +20,9 @@
 
     <nav>
       <div>
-          <a href="a2/products.php" target="_blank">Products</a> |
-          <a href="a2/service.php" target="_blank">Service</a> |
-          <a href="a2/login.php" target="_blank">Login</a> 
+          <a href="products.php" target="_blank">Products</a> |
+          <a href="service.php" target="_blank">Service</a> |
+          <a href="login.php" target="_blank">Login</a> 
         </div>
     </nav>
 
