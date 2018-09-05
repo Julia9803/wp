@@ -20,9 +20,9 @@
 
     <nav>
       <div>
-          <a href="/~s3739865/wp/a2/products.php" target="_blank">Products</a> |
-          <a href="/~s3739865/wp/a2/service.php" target="_blank">Service</a> |
-          <a href="/~s3739865/wp/a2/login.php" target="_blank">Login</a> 
+          <a href="a2/products.php" target="_blank">Products</a> |
+          <a href="a2/service.php" target="_blank">Service</a> |
+          <a href="a2/login.php" target="_blank">Login</a> 
         </div>
     </nav>
 
