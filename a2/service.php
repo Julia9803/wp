@@ -10,7 +10,7 @@
     <script src='../wireframe.js'></script>
   </head>
 
-  <body>
+  <body id="background">
 
     <header>
       <div>
