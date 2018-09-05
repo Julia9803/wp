@@ -7,89 +7,51 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script src="js/login.js"></script>
     <script src='../wireframe.js'></script>
   </head>
 
-  <body>
-
-    <header>
+  <body id="background">
+      <header>
       <div>
-        <img src="images/logo.png" width="50px" height="50px"/>Fantastic Shoes
+        <img src="images/logo.png" width="70px" height="70px"/>Fantastic Shoes
         </div>
     </header>
 
     <nav>
       <div>
-          <a href="products.php" target="_blank">Products</a> |
-          <a href="service.php" target="_blank">Service</a> |
-          <a href="login.php" target="_blank">Login</a> 
+          <a href="products.php" target="_self">Products</a> |
+          <a href="service.php" target="_self">Service</a> |
+          <a href="login.php" target="_self">Login</a> | 
+          <a href="index.php" target="_self">Main</a> | 
         </div>
     </nav>
-
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        
-        <!-- <img src='../../media/website-under-construction.png' alt='Website Under Construction'/> -->
-        </article>
-        <section class="titles">
-            <article class="box">
-                <span class="image">
-                    <img src="images/pic01.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
-                </span>
-            </article>
-            
-            <article class="box">
-                <span class="image">
-                    <img src="images/pic02.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
-                </span>
-            </article>
-            
-            <article class="box">
-                <span class="image">
-                    <img src="images/pic03.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
-                </span>
-            </article>
-        </section>
-        <section class="titles">
-            <article class="box">
-                <span class="image">
-                    <img src="images/pic04.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
-                </span>
-            </article>
-            
-            <article class="box">
-                <span class="image">
-                    <img src="images/pic05.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
-                </span>
-            </article>
-            
-            <article class="box">
-                <span class="image">
-                    <img src="images/pic06.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
-                </span>
-            </article>
-        </section>
-    </main>
-
+      
+      <main id="main-background">
+          <div class="login">
+              <div class="login-content">
+                  <div class="login-logo">
+                      <img src="images/logo.png" width="150px" height="170px"/><br/>
+                      <h2>The Fantastic</h2>
+                  </div>
+                  <form class="form">
+                      <div class="form-group">
+                          <label>Username：</label>
+                          <input id="username" class="form-input" type="text" placeholder="Please input username." onChange="usernameChnage()" required/>
+                      </div>
+                      <div class="form-group">
+                          <label>Password：</label>
+                          <input id="password" class="form-input" type="password" placeholder="Please input password." onChange="passwordChange()" required/>
+                      </div>
+                      <div class="form-group">
+                          <input id="login-button" class="form-button" type="button" value="Submit" onclick="login()" />
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </main>
+      
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());

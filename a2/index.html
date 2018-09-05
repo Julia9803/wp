@@ -10,81 +10,77 @@
     <script src='../wireframe.js'></script>
   </head>
 
-  <body>
+  <body id="background">
 
     <header>
       <div>
-        <img src="images/logo.png" width="50px" height="50px"/>Fantastic Shoes
+        <img src="images/logo.png" width="70px" height="70px"/>Fantastic Shoes
         </div>
     </header>
 
     <nav>
       <div>
-          <a href="products.php" target="_blank">Products</a> |
-          <a href="service.php" target="_blank">Service</a> |
-          <a href="login.php" target="_blank">Login</a> 
+          <a href="products.php" target="_self">Products</a> |
+          <a href="service.php" target="_self">Service</a> |
+          <a href="login.php" target="_self">Login</a> | 
+          <a href="index.php" target="_self">Main</a> | 
         </div>
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        
-        <!-- <img src='../../media/website-under-construction.png' alt='Website Under Construction'/> -->
-        </article>
-        <section class="titles">
-            <article class="box">
+        <section class="titles" id="main-background">
+            <article class="box" id="inner-background">
                 <span class="image">
                     <img src="images/pic01.jpg">
                     <h2>UGG boot</h2>
                     <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php">see more...</a>
                 </span>
             </article>
             
-            <article class="box">
+            <article class="box" id="inner-background">
                 <span class="image">
                     <img src="images/pic02.jpg">
                     <h2>UGG boot</h2>
                     <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php">see more...</a>
                 </span>
             </article>
             
-            <article class="box">
+            <article class="box" id="inner-background">
                 <span class="image">
                     <img src="images/pic03.jpg">
                     <h2>UGG boot</h2>
                     <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php">see more...</a>
                 </span>
             </article>
         </section>
-        <section class="titles">
-            <article class="box">
+        <section class="titles" id="main-background">
+            <article class="box" id="inner-background">
                 <span class="image">
                     <img src="images/pic04.jpg">
                     <h2>UGG boot</h2>
                     <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php">see more...</a>
                 </span>
             </article>
             
-            <article class="box">
+            <article class="box" id="inner-background">
                 <span class="image">
                     <img src="images/pic05.jpg">
                     <h2>UGG boot</h2>
                     <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php">see more...</a>
                 </span>
             </article>
             
-            <article class="box">
+            <article class="box" id="inner-background">
                 <span class="image">
                     <img src="images/pic06.jpg">
                     <h2>UGG boot</h2>
                     <p>A beautiful UGG boot.</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php">see more...</a>
                 </span>
             </article>
         </section>

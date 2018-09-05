@@ -1,6 +1,15 @@
 /* Insert your styles here */
+#main-background {
+    background-color: #e9ecf3;
+}
+#inner-background {
+    background-color: white;
+}
+#background {
+    background-image: url(../images/banner.jpg);
+}
 .logo{
-    background-image: url("../images/logo.png")
+    background-image: url("../images/logo.png");
     background-size: contain;
     width: 40px;
     height: 40px;
@@ -30,4 +39,49 @@
     width: 100%;
     border-radius: 4px;
     overflow: hidden;
+}
+
+.login {
+    width: 100%;
+    text-align: center;
+}
+.login-content {
+    width: 500px;
+    padding: 40px 40px 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 12% auto 0;
+}
+.login-logo {
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+    align-content: center;
+    border-radius: 20px;
+    border-color: cadetblue;
+    background-color:aliceblue;
+}
+
+.form {
+    padding-top: 20px;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-input {
+    padding: 6px 12px;
+}
+.form-button {
+    color: #fff;
+    background-color: #32c5d2;
+    border: none;  
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 14px;
+    outline: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-image: none;
 }
