@@ -40,8 +40,8 @@
                         action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
         
                       <div class="form-group">
-                          <label>Username：</label>
-                          <input id="username" class="form-input" type="text" placeholder="Please input username." name="username" onChange="usernameChnage()" required/>
+                          <label>Email：</label>
+                          <input id="email" class="form-input" type="email" placeholder="Please input username." name="username" onChange="usernameChnage()" required/>
                       </div>
                       <div class="form-group">
                           <label>Password：</label>
