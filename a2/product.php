@@ -66,7 +66,7 @@
                         </select>
                     </div>
                     <div class="detail-display">
-                        <button class="form-button">ADD TO BAG</button>
+                        <button class="form-button" type="submit">ADD TO BAG</button>
                     </div>
                 </form>
                 <br/>
