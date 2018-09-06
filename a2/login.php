@@ -22,7 +22,7 @@
     <nav>
       <div>
           <a href="products.php" target="_self">Products</a> |
-          <a href="service.php" target="_self">Service</a> |
+          <a href="product.php" target="_self">Product</a> |
           <a href="login.php" target="_self">Login</a> | 
           <a href="index.php" target="_self">Main</a> | 
         </div>
@@ -35,7 +35,10 @@
                       <img src="images/logo.png" width="150px" height="170px"/><br/>
                       <h2>The Fantastic</h2>
                   </div>
-                  <form class="form">
+                  <form class="form"
+                        method= "post"
+                        action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+        
                       <div class="form-group">
                           <label>Username：</label>
                           <input id="username" class="form-input" type="text" placeholder="Please input username." onChange="usernameChnage()" required/>
@@ -45,7 +48,7 @@
                           <input id="password" class="form-input" type="password" placeholder="Please input password." onChange="passwordChange()" required/>
                       </div>
                       <div class="form-group">
-                          <input id="login-button" class="form-button" type="button" value="Submit" onclick="login()" />
+                          <input id="login-button" class="form-button" type="submit" value="Submit" onclick="login()" />
                       </div>
                   </form>
               </div>

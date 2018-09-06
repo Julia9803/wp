@@ -21,18 +21,75 @@
     <nav>
       <div>
           <a href="products.php" target="_self">Products</a> |
-          <a href="service.php" target="_self">Service</a> |
+          <a href="product.php" target="_self">Product</a> |
           <a href="login.php" target="_self">Login</a> | 
-          <a href="index.php" target="_self">Main</a> |
+          <a href="index.php" target="_self">Main</a> | 
         </div>
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction'/>
-      </article>
+        <section class="titles" id="main-background">
+            <article class="box" id="inner-background">
+                <span class="image">
+                    <img class="img-style" src="images/pic01.jpg">
+                    <h2>Marc Jacobs Beauty</h2>
+                    <p>Re(marc)able Full Cover Foundation Concentrate.</p>
+                    <p class="price">$80</p>
+                    <a href="product.php">see more...</a>
+                </span>
+            </article>
+            
+            <article class="box" id="inner-background">
+                <span class="image">
+                    <img class="img-style" src="images/pic02.jpg">
+                    <h2>UGG boot</h2>
+                    <p>A beautiful UGG boot.</p>
+                    <p class="price">$80</p>
+                    <a href="product.php">see more...</a>
+                </span>
+            </article>
+            
+            <article class="box" id="inner-background">
+                <span class="image">
+                    <img class="img-style" src="images/pic03.jpg">
+                    <h2>UGG boot</h2>
+                    <p>A beautiful UGG boot.</p>
+                    <p class="price">$80</p>
+                    <a href="product.php">see more...</a>
+                </span>
+            </article>
+        </section>
+        <section class="titles" id="main-background">
+            <article class="box" id="inner-background">
+                <span class="image">
+                    <img class="img-style" src="images/pic04.jpg">
+                    <h2>UGG boot</h2>
+                    <p>A beautiful UGG boot.</p>
+                    <p class="price">$80</p>
+                    <a href="product.php">see more...</a>
+                </span>
+            </article>
+            
+            <article class="box" id="inner-background">
+                <span class="image">
+                    <img class="img-style" src="images/pic05.jpg">
+                    <h2>UGG boot</h2>
+                    <p>A beautiful UGG boot.</p>
+                    <p class="price">$80</p>
+                    <a href="product.php">see more...</a>
+                </span>
+            </article>
+            
+            <article class="box" id="inner-background">
+                <span class="image">
+                    <img class="img-style" src="images/pic06.jpg">
+                    <h2>UGG boot</h2>
+                    <p>A beautiful UGG boot.</p>
+                    <p class="price">$80</p>
+                    <a href="product.php">see more...</a>
+                </span>
+            </article>
+        </section>
     </main>
 
     <footer>

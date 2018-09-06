@@ -23,9 +23,10 @@
 .box {
     position: relative;
     width: 30%;
-    margin: 35px 0 0 35px;
+    margin: 35px 0 30px 35px;
     padding: 10px 0 0 10px;
     text-align: center;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .image {
@@ -35,8 +36,16 @@
     position: relative;
     position: relative;
     width: 100%;
-    border-radius: 4px;
     overflow: hidden;
+}
+.img-style {
+    width: 300px;
+    height: 300px;
+}
+.img-product {
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
 }
 
 .login {
@@ -49,6 +58,7 @@
     background-color: #fff;
     border-radius: 4px;
     margin: 8% auto 100px;
+    box-shadow: 10px 10px 5px #888888;
 }
 .login-logo {
     max-width: 250px;
@@ -78,4 +88,61 @@
     line-height: 14px;
     vertical-align: middle;
     white-space: nowrap;
+}
+
+
+.author {
+    margin-top: -50px;
+    margin-bottom: 277px;
+    width: 100%;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 0 1em 30px 1em;
+    box-sizing: border-box;
+}
+.author-banner {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/banner.jpg);
+    height: 350px;
+}
+.author-head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+    box-shadow: 0 0 30px #95a5a6;
+    position: relative;
+    margin: 0 auto;
+}
+.author-avatar {
+    border-radius: 50%;
+}
+
+.price {
+    color: red;
+}
+
+.col5 {
+    width: 33.333%;
+    margin-left: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
+}
+.col7 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-right: 10px;
+}
+.detail-display {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
