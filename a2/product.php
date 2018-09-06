@@ -20,6 +20,15 @@
                 document.getElementById("qty").value =
                 parseInt(document.getElementById("qty").value) + 1;
             }
+        
+        function check(){
+            alert("Sorry! You can't buy items with " + parseInt(document.getElementById("qty").value) + " quantity input.");
+            if(parseInt(document.getElementById("qty").value) > 0){
+                return true;
+            }else{
+                return false;
+            }
+        }
     </script>
   </head>
 
@@ -48,7 +57,8 @@
             </div>
         
             <div class="col7">
-                <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+                <form method="post" onsubmit="return check()"
+                      action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
                 <div class="detail-display">
                     <h2>Marc Jacobs Beauty</h2>
                     <input type="hidden" name="id" value="001"/>
@@ -71,7 +81,7 @@
                     <div class="detail-display">
                         <label>QTY</label>
                         <input type="button" id="minus" value="-" onclick="clickMinus()">
-                        <input id="qty" name="qty" type="number" value="1" min="0">
+                        <input id="qty" name="qty" type="text" value="1">
                         <input type="button" id="plus" value="+" onclick="clickPlus()">
                     </div>
                     <div class="detail-display">
