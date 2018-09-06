@@ -22,10 +22,10 @@
             }
         
         function check(){
-            alert("Sorry! You can't buy items with " + parseInt(document.getElementById("qty").value) + " quantity input.");
             if(parseInt(document.getElementById("qty").value) > 0){
                 return true;
             }else{
+                alert("Sorry! You can't buy items with " + document.getElementById("qty").value + " quantity input.");
                 return false;
             }
         }
