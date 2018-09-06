@@ -35,7 +35,7 @@
             </div>
         
             <div class="col7">
-                <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+                <form method="post" action="/~e54061/wp/processing.php">
                     <div class="detail-display">
                         <h2>Marc Jacobs Beauty</h2>
                         <p>Re(marc)able Full Cover Foundation Concentrate</p>
