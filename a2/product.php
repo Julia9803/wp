@@ -8,6 +8,19 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function clickMinus(){
+            if(parseInt(document.getElementById("qty").value) - 1 >= 0)
+                document.getElementById("qty").value = parseInt(document.getElementById("qty").value) - 1;
+            }
+                
+        function clickPlus(){
+            if(parseInt(document.getElementById("qty").value) + 1 >= 0)
+                document.getElementById("qty").value =
+                parseInt(document.getElementById("qty").value) + 1;
+            }
+    </script>
   </head>
 
   <body id="background">
@@ -57,14 +70,9 @@
                     </div>
                     <div class="detail-display">
                         <label>QTY</label>
-                        <select name="qty">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
+                        <input type="button" id="minus" value="-" onclick="clickMinus()">
+                        <input id="qty" name="qty" type="number" value="1" min="0">
+                        <input type="button" id="plus" value="+" onclick="clickPlus()">
                     </div>
                     <div class="detail-display">
                         <button class="form-button" type="submit">ADD TO BAG</button>
