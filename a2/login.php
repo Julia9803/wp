@@ -41,7 +41,7 @@
         
                       <div class="form-group">
                           <label>Email：</label>
-                          <input id="email" class="form-input" type="email" placeholder="Please input username." name="username" onChange="usernameChnage()" required/>
+                          <input id="email" class="form-input" type="email" placeholder="Please input username." name="email" onChange="usernameChnage()" required/>
                       </div>
                       <div class="form-group">
                           <label>Password：</label>
