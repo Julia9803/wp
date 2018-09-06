@@ -14,7 +14,7 @@
 
     <header>
       <div>
-        <img src="images/logo.png" width="70px" height="70px"/>Fantastic Shoes
+        <img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup
         </div>
     </header>
 
@@ -23,7 +23,7 @@
           <a href="products.php" target="_self">Products</a> |
           <a href="product.php" target="_self">Product</a> |
           <a href="login.php" target="_self">Login</a> | 
-          <a href="index.php" target="_self">Main</a> | 
+          <a href="index.php" target="_self">Profile</a> | 
         </div>
     </nav>
 
