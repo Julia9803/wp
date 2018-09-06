@@ -41,11 +41,11 @@
         
                       <div class="form-group">
                           <label>Username：</label>
-                          <input id="username" class="form-input" type="text" placeholder="Please input username." onChange="usernameChnage()" required/>
+                          <input id="username" class="form-input" type="text" placeholder="Please input username." name="username" onChange="usernameChnage()" required/>
                       </div>
                       <div class="form-group">
                           <label>Password：</label>
-                          <input id="password" class="form-input" type="password" placeholder="Please input password." onChange="passwordChange()" required/>
+                          <input id="password" class="form-input" type="password" placeholder="Please input password." name="password" onChange="passwordChange()" required/>
                       </div>
                       <div class="form-group">
                           <input id="login-button" class="form-button" type="submit" value="Submit" onclick="login()" />

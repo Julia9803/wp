@@ -35,17 +35,17 @@
             </div>
         
             <div class="col7">
-                <form method="post" action="/~e54061/wp/processing.php">
-                    <div class="detail-display">
-                        <h2>Marc Jacobs Beauty</h2>
-                        <p>Re(marc)able Full Cover Foundation Concentrate</p>
-                    </div>
-                    <div class="detail-display">
-                        <h2 class="price">$80.00</h2>
-                    </div>
+                <div class="detail-display">
+                    <h2>Marc Jacobs Beauty</h2>
+                     <p>Re(marc)able Full Cover Foundation Concentrate</p>
+                </div>
+                <div class="detail-display">
+                    <h2 class="price">$80.00</h2>
+                </div>
+                <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
                  <div class="detail-display">
                      <label>COLOR</label>
-                     <select>
+                     <select name="color">
                          <option value="Ivory">Ivory</option>
                          <option value="Bisque">Bisque</option>
                          <option value="Beige">Beige</option>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="detail-display">
                         <label>QTY</label>
-                        <select>
+                        <select name="quantity">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>

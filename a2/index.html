@@ -41,19 +41,19 @@
         
                       <div class="form-group">
                           <label>Username：</label>
-                          <input id="username" class="form-input" type="text" value="julia9803" disabled="disabled"  required/>
+                          <input id="username" class="form-input" type="text" value="julia9803" name="username" disabled="disabled"  required/>
                       </div>
                       <div class="form-group">
                           <label>Background：</label>
-                          <input id="username" class="form-input" type="text" value="university student" disabled="disabled"  required/>
+                          <input id="username" class="form-input" type="text" value="university student" name="background" disabled="disabled"  required/>
                       </div>
                       <div class="form-group">
                           <label>Hobby：</label>
-                          <input id="hobby" class="form-input" type="text" value="shopping" disabled="disabled" required/>
+                          <input id="hobby" class="form-input" type="text" value="shopping" name="hobby" disabled="disabled" required/>
                       </div>
                       <div class="form-group">
                           <label>Focus：</label>
-                          <input id="focus" class="form-input" type="text" value="lipstick and eyeshadow" disabled="disabled" required/>
+                          <input id="focus" class="form-input" type="text" value="lipstick and eyeshadow" name="focus" disabled="disabled" required/>
                       </div>
                   </form>
         </div>
