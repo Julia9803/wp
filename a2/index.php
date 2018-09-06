@@ -45,7 +45,7 @@
                       </div>
                       <div class="form-group">
                           <label>Background：</label>
-                          <input id="background" class="form-input" type="text" value="graduate student in Software Engineering" disabled="disabled" required/>
+                          <input id="username" class="form-input" type="text" value="university student" disabled="disabled"  required/>
                       </div>
                       <div class="form-group">
                           <label>Hobby：</label>
@@ -53,14 +53,23 @@
                       </div>
                       <div class="form-group">
                           <label>Focus：</label>
-                          <input id="focus" class="form-input" type="text" value="summer shoes and winter boots" disabled="disabled" required/>
+                          <input id="focus" class="form-input" type="text" value="lipstick and eyeshadow" disabled="disabled" required/>
                       </div>
-                      <div class="form-group">
-                          <label>Focus：</label>
-                          <input id="focus" class="form-input" type="text" value="summer shoes and winter boots" disabled="disabled" required/>
-                      </div>
-
                   </form>
+        </div>
+        <div class="history">
+            <div class="detail-display">
+                <h3>History</h3>
+            </div>
+            <div class="titles">
+            <br/>
+            <img class="history-img" src="images/pic01.jpg" width="200px" height="200px">
+            <img class="history-img" src="images/pic02.jpg" width="200px" height="200px">
+            <img class="history-img" src="images/pic03.jpg" width="200px" height="200px">
+            <img class="history-img" src="images/pic04.jpg" width="200px" height="200px">
+            <img class="history-img" src="images/pic05.jpg" width="200px" height="200px">
+            <img class="history-img" src="images/pic06.jpg" width="200px" height="200px">
+            </div>
         </div>
     </main>
 

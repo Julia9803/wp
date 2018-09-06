@@ -40,7 +40,7 @@
                         <p>Re(marc)able Full Cover Foundation Concentrate</p>
                     </div>
                     <div class="detail-display">
-                        <h2 class="price">$80</h2>
+                        <h2 class="price">$80.00</h2>
                     </div>
                  <div class="detail-display">
                      <label>COLOR</label>

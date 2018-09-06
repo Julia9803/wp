@@ -6,7 +6,7 @@
     background-color: white;
 }
 #background {
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/background.jpg);
 }
 .logo{
     background-image: url("../images/logo.png");
@@ -27,6 +27,7 @@
     padding: 10px 0 0 10px;
     text-align: center;
     box-shadow: 10px 10px 5px #888888;
+    border-radius: 20px;
 }
 
 .image {
@@ -107,6 +108,7 @@
     background-position: center;
     background-size: cover;
     background-image: url(../images/banner.jpg);
+    /*get this picture only for education use from http://simpledesktops.com/browse/desktops/2016/dec/06/christmas-trees/ */
     height: 350px;
 }
 .author-head {
@@ -134,6 +136,7 @@
     padding-right: 15px;
     position: relative;
     text-align: center;
+    background-color: white;
 }
 .col7 {
     width: 50%;
@@ -141,8 +144,16 @@
     padding-right: 15px;
     position: relative;
     margin-right: 10px;
+    background-color: white;
 }
 .detail-display {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.history {
+    background: #fff;
+    margin-top: -250px;
+}
+.history-img {
+    margin: 20px 20px;
 }

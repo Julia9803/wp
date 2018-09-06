@@ -32,9 +32,10 @@
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic01.jpg">
+                    <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>Marc Jacobs Beauty</h2>
-                    <p>Re(marc)able Full Cover Foundation Concentrate.</p>
-                    <p class="price">$80</p>
+                    <p>Re(marc)able Full Cover Foundation Concentrate</p>
+                    <p class="price">$80.00</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -42,9 +43,10 @@
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic02.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <p class="price">$80</p>
+                    <!-- get this picture only for education use from https://www.sephora.com.au/ -->
+                    <h2>ZOEVA</h2>
+                    <p>Screen Queen Highlighter Palette</p>
+                    <p class="price">$25.00</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -52,9 +54,10 @@
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic03.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <p class="price">$80</p>
+                    <!-- get this picture only for education use from https://www.sephora.com.au/ -->
+                    <h2>Make Up For Ever</h2>
+                    <p>Mist & Fix Setting Spray</p>
+                    <p class="price">$19.00</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -63,9 +66,10 @@
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic04.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <p class="price">$80</p>
+                    <!-- get this picture only for education use from https://www.sephora.com.au/ -->
+                    <h2>ZOEVA</h2>
+                    <p>Blush Palette</p>
+                    <p class="price">$36.00</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -73,9 +77,10 @@
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic05.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <p class="price">$80</p>
+                    <!-- get this picture only for education use from https://www.sephora.com.au/ -->
+                    <h2>Anastasia Beverly Hills</h2>
+                    <p>Soft Glam Eye Shadow Palette</p>
+                    <p class="price">$75.00</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -83,9 +88,10 @@
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic06.jpg">
-                    <h2>UGG boot</h2>
-                    <p>A beautiful UGG boot.</p>
-                    <p class="price">$80</p>
+                    <!-- get this picture only for education use from https://www.sephora.com.au/ -->
+                    <h2>IT Cosmetics</h2>
+                    <p>Your Skin But Better CC Cream SPF 50+</p>
+                    <p class="price">$61.00</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
