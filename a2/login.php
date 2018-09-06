@@ -13,13 +13,13 @@
   </head>
 
   <body id="background">
-      <header>
+      <header class="opacity">
       <div>
         <img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup
         </div>
     </header>
 
-    <nav>
+    <nav class="opacity">
       <div>
           <a href="products.php" target="_self">Products</a> |
           <a href="product.php" target="_self">Product</a> |
@@ -55,7 +55,7 @@
           </div>
       </main>
       
-    <footer>
+    <footer class="opacity-less">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
       </script> Yubin Gao, s3739865.</div>

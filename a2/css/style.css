@@ -157,3 +157,10 @@
 .history-img {
     margin: 20px 20px;
 }
+
+.opacity {
+    background: rgba(0,0,0,0);
+}
+.opacity-less {
+    background: rgba(255,255,255,0.4);
+}
