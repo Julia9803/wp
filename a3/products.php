@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <?php
+    include_once('tools.php');
+    //error_reporting(0);
+    session_start();
+    echo '<h3> $_POST contains:</h3>';
+    preShow($_POST);
+    echo '<h3> $_SESSION contains:</h3>';
+    preShow($_SESSION);
+?>
+<?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <html lang='en'>

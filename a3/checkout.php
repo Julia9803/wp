@@ -71,7 +71,7 @@
             </div>
             <label for="address">Address</label>
             <textarea class="u-full-width" name="address"></textarea>
-            <input type="submit" value="submit">
+            <input class="button-primary" type="submit" value="submit">
         </div>
     </form>
     
