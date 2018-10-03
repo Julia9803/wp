@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
     include_once('tools.php');
-    // error_reporting(0);
+    //error_reporting(0);
     session_start();
     echo '<h3> $_POST contains:</h3>';
     preShow($_POST);
@@ -23,6 +23,7 @@
       <?php
         // This PHP code inserts CSS to style the "current page" link in the nav area
         $here = $_SERVER['SCRIPT_NAME']; 
+        echo '<h3>$here</h3>';
         $bits = explode('/',$here); 
         $filename = $bits[count($bits)-1]; 
         echo "nav a[href$='$filename'] {
@@ -33,22 +34,71 @@
     </style>
   </head>
 
-  <body>
+    <body id="background">
 
-    <header>
-      <div>Put company logo and name here</div>
-    </header>
+<header class="opacity">
+  <div>
+    <img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup
+    </div>
+</header>
 
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
+<nav class="opacity">
+  <div>
+      <a href="products.php" target="_self">Products</a> |
+      <a href="product.php" target="_self">Product</a> |
+      <a href="login.php" target="_self">Login</a> | 
+      <a href="index.php" target="_self">Profile</a> | 
+      <a href="cart.php" target="_self">Cart</a> |
+      <a href="cart.php" target="_self">Checkout</a> |
+      <a href="cart.php" target="_self">Reciept</a> |
+    </div>
+</nav>
 
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
-    </main>
+<main>
+    <div class="author-banner"></div>
+    <div class="author">
+        <div class="author-head">
+           <img class="author-avatar" src="images/mypic.png" width="90px" height="90px" /> 
+        </div>
+        <h2>Julia</h2>
+        <p>The end is always near.</p>
+        <form class="form"
+                    method= "post"
+                    action="">
+    
+                  <div class="form-group">
+                      <label>Username：</label>
+                      <input id="username" class="form-input" type="text" value="julia9803" name="username" disabled="disabled"  required/>
+                  </div>
+                  <div class="form-group">
+                      <label>Background：</label>
+                      <input id="username" class="form-input" type="text" value="university student" name="background" disabled="disabled"  required/>
+                  </div>
+                  <div class="form-group">
+                      <label>Hobby：</label>
+                      <input id="hobby" class="form-input" type="text" value="shopping" name="hobby" disabled="disabled" required/>
+                  </div>
+                  <div class="form-group">
+                      <label>Focus：</label>
+                      <input id="focus" class="form-input" type="text" value="lipstick and eyeshadow" name="focus" disabled="disabled" required/>
+                  </div>
+              </form>
+    </div>
+    <div class="history">
+        <div class="detail-display">
+            <h3>History</h3>
+        </div>
+        <div class="titles">
+        <br/>
+        <img class="history-img" src="images/pic01.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/pic02.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/pic03.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/pic04.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/pic05.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/pic06.jpg" width="200px" height="200px">
+        </div>
+    </div>
+</main>
 
     <footer>
       <div>&copy;<script>

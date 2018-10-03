@@ -1,1 +1,166 @@
 /* Insert your styles here */
+#main-background {
+    background-color: #e9ecf3;
+}
+#inner-background {
+    background-color: white;
+}
+#background {
+    background-image: url(../images/background.jpg);
+}
+.logo{
+    background-image: url("../images/logo.png");
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.titles {
+    display: flex;
+    column-count: 3；
+}
+
+.box {
+    position: relative;
+    width: 30%;
+    margin: 35px 0 30px 35px;
+    padding: 10px 0 0 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 20px;
+}
+
+.image {
+    border-radius: 20px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.img-style {
+    width: 300px;
+    height: 300px;
+}
+.img-product {
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.login {
+    width: 100%;
+    text-align: center;
+}
+.login-content {
+    width: 500px;
+    padding: 40px 40px 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 8% auto 100px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.login-logo {
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
+    align-content: center;
+    border-radius: 20px;
+    border-color: cadetblue;
+    background-color:aliceblue;
+}
+
+.form {
+    padding-top: 20px;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-input {
+    padding: 6px 12px;
+}
+.form-button {
+    color: #fff;
+    border: none;
+    background-color: #32c5d2;  
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+.author {
+    margin-top: -50px;
+    margin-bottom: 277px;
+    width: 100%;
+    background: #f8f8f8;
+    text-align: center;
+    padding: 0 1em 30px 1em;
+    box-sizing: border-box;
+}
+.author-banner {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/banner.jpg);
+    /*get this picture only for education use from http://simpledesktops.com/browse/desktops/2016/dec/06/christmas-trees/ */
+    height: 350px;
+}
+.author-head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+    box-shadow: 0 0 30px #95a5a6;
+    position: relative;
+    margin: 0 auto;
+}
+.author-avatar {
+    border-radius: 50%;
+}
+
+.price {
+    color: red;
+}
+
+.col5 {
+    width: 33.333%;
+    margin-left: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+.col7 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-right: 10px;
+    background-color: white;
+}
+.detail-display {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.history {
+    background: #fff;
+    margin-top: -250px;
+}
+.history-img {
+    margin: 20px 20px;
+}
+
+.opacity {
+    background: rgba(0,0,0,0);
+}
+.opacity-less {
+    background: rgba(255,255,255,0.4);
+}
