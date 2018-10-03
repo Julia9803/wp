@@ -49,6 +49,8 @@
 
     <form action="checkout" method="post">
         <div class="row">
+            <div class="three columns">
+            </div>
             <div class="six columns">
                 <label for="exampleEmailInput">Name</label>
                 <input class="u-full-width" type="text" name="name">
@@ -69,10 +71,10 @@
                 <label for="exampleEmailInput">Expiry Date</label>
                 <input class="u-full-width" type="email" name="expiry_date">
             </div>
-            <label for="address">Address</label>
-            <textarea class="u-full-width" name="address"></textarea>
-            <input class="button-primary" type="submit" value="submit">
         </div>
+        <label for="address">Address</label>
+        <textarea class="u-full-width" name="address"></textarea>
+        <input class="button-primary" type="submit" value="submit">
     </form>
     
 </main>
