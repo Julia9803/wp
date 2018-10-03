@@ -17,7 +17,7 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <link id='skeleton' type="text/css" rel="stylesheet" href="css/skeleton.css">
-    <link id='skeleton' type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link id='normalize' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
     <style>
       <?php
@@ -34,7 +34,7 @@
     </style>
   </head>
 
-    <body id="background">
+  <body id="background">
 
 <header class="opacity">
   <div>
@@ -43,15 +43,13 @@
 </header>
 
 <nav class="opacity">
-  <div>
-      <a href="products.php" target="_self">Products</a> |
-      <a href="product.php" target="_self">Product</a> |
-      <a href="login.php" target="_self">Login</a> | 
-      <a href="index.php" target="_self">Profile</a> | 
-      <a href="cart.php" target="_self">Cart</a> |
-      <a href="cart.php" target="_self">Checkout</a> |
-      <a href="cart.php" target="_self">Reciept</a> |
-    </div>
+  <a href="products.php" target="_self">Products</a> |
+  <a href="product.php" target="_self">Product</a> |
+  <a href="login.php" target="_self">Login</a> | 
+  <a href="index.php" target="_self">Profile</a> | 
+  <a href="cart.php" target="_self">Cart</a> |
+  <a href="checkout.php" target="_self">Checkout</a> |
+  <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
 <main>
