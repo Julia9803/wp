@@ -9,7 +9,7 @@
     preShow($_SESSION);
 ?>
 <?php
-    styleCurrentNavLink('background-color: rgba(255,255,255,0.6);');
+    styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <html lang='en'>
   <head>
@@ -22,30 +22,17 @@
     <link id='skeleton' type="text/css" rel="stylesheet" href="css/skeleton.css">
     <link id='normalize' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
-    <style>
-      /* <?php
-        // This PHP code inserts CSS to style the "current page" link in the nav area
-        $here = $_SERVER['SCRIPT_NAME']; 
-        echo '<h3>$here</h3>';
-        $bits = explode('/',$here); 
-        $filename = $bits[count($bits)-1]; 
-        echo "nav a[href$='$filename'] {
-        box-shadow: 1px 1px 1px 2px navy;
-      }";
-      ?> */
-      
-    </style>
   </head>
 
   <body id="background">
 
-<header class="opacity">
-  <div>
-    <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
-    </div>
-</header>
+    <header class="opacity">
+        <div>
+            <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
+        </div>
+    </header>
 
-<nav>
+<nav class="nav">
   <a href="products.php" target="_self">Products</a> |
   <a href="product.php" target="_self">Product</a> |
   <a href="login.php" target="_self">Login</a> | 
@@ -55,7 +42,7 @@
   <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
-<main>
+<main class="titles">
     <div class="middle-title">
       <h2>YOUR BAG</h2>
     </div>
@@ -90,7 +77,7 @@
     </div>
 </main>
 
-    <footer>
+    <footer class="footer">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
       </script> Yubin Gao, s3739865,A3-s3739865.</div>

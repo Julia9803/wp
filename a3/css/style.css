@@ -164,3 +164,13 @@
 .opacity-less {
     background: rgba(255,255,255,0.4);
 }
+
+.nav {
+    border-bottom-color: black;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-decoration-color: #fff;
+}

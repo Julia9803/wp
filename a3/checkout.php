@@ -8,6 +8,9 @@
     echo '<h3> $_SESSION contains:</h3>';
     preShow($_SESSION);
 ?>
+<?php
+    styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -19,19 +22,6 @@
     <link id='skeleton' type="text/css" rel="stylesheet" href="css/skeleton.css">
     <link id='normalize' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
-    <style>
-      <?php
-        // This PHP code inserts CSS to style the "current page" link in the nav area
-        $here = $_SERVER['SCRIPT_NAME']; 
-        echo '<h3>$here</h3>';
-        $bits = explode('/',$here); 
-        $filename = $bits[count($bits)-1]; 
-        echo "nav a[href$='$filename'] {
-        box-shadow: 1px 1px 1px 2px navy;
-      }";
-      ?>
-      
-    </style>
   </head>
 
   <body id="background">
@@ -53,52 +43,41 @@
 </nav>
 
 <main>
-    <div class="author-banner"></div>
-    <div class="author">
-        <div class="author-head">
-           <img class="author-avatar" src="images/mypic.png" width="90px" height="90px" /> 
+    <div class="middle-title">
+      <h2>YOUR BAG</h2>
+    </div>
+
+    <form action="checkout" method="post">
+        <div class="row">
+            <div class="six columns">
+                <label for="exampleEmailInput">Name</label>
+                <input class="u-full-width" type="text" name="name">
+            </div>
+            <div class="six columns">
+                <label for="exampleEmailInput">Email</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email">
+            </div>
+            <div class="six columns">
+                <label for="exampleEmailInput">Mobile Phone</label>
+                <input class="u-full-width" type="text" name="mobile_phone">
+            </div>
+            <div class="six columns">
+                <label for="exampleEmailInput">Credit Card</label>
+                <input class="u-full-width" type="text" name="credit_card">
+            </div>
+            <div class="six columns">
+                <label for="exampleEmailInput">Expiry Date</label>
+                <input class="u-full-width" type="email" name="expiry_date">
+            </div>
+            <label for="address">Address</label>
+            <textarea class="u-full-width" name="address"></textarea>
+            <input type="submit" value="submit">
         </div>
-        <h2>Julia</h2>
-        <p>The end is always near.</p>
-        <form class="form"
-                    method= "post"
-                    action="">
+    </form>
     
-                  <div class="form-group">
-                      <label>Username：</label>
-                      <input id="username" class="form-input" type="text" value="julia9803" name="username" disabled="disabled"  required/>
-                  </div>
-                  <div class="form-group">
-                      <label>Background：</label>
-                      <input id="username" class="form-input" type="text" value="university student" name="background" disabled="disabled"  required/>
-                  </div>
-                  <div class="form-group">
-                      <label>Hobby：</label>
-                      <input id="hobby" class="form-input" type="text" value="shopping" name="hobby" disabled="disabled" required/>
-                  </div>
-                  <div class="form-group">
-                      <label>Focus：</label>
-                      <input id="focus" class="form-input" type="text" value="lipstick and eyeshadow" name="focus" disabled="disabled" required/>
-                  </div>
-              </form>
-    </div>
-    <div class="history">
-        <div class="detail-display">
-            <h3>History</h3>
-        </div>
-        <div class="titles">
-        <br/>
-        <img class="history-img" src="images/pic01.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic02.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic03.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic04.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic05.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic06.jpg" width="200px" height="200px">
-        </div>
-    </div>
 </main>
 
-    <footer>
+    <footer class="footer">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
       </script> Yubin Gao, s3739865,A3-s3739865.</div>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -57,7 +60,7 @@
           </div>
       </main>
       
-    <footer class="opacity-less">
+    <footer class="footer">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
       </script> Yubin Gao, s3739865.</div>
