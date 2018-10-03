@@ -42,7 +42,7 @@
     </div>
 </header>
 
-<nav class="opacity">
+<nav>
   <a href="products.php" target="_self">Products</a> |
   <a href="product.php" target="_self">Product</a> |
   <a href="login.php" target="_self">Login</a> | 
