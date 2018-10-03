@@ -13,20 +13,22 @@
   </head>
 
   <body id="background">
-      <header class="opacity">
-      <div>
-        <img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup
+    <header class="opacity">
+        <div>
+            <img src="images/logo.png" width="70px" height="70px"/><h3>Fantastic Makeup</h3>
         </div>
     </header>
 
-    <nav class="opacity">
-      <div>
-          <a href="products.php" target="_self">Products</a> |
-          <a href="product.php" target="_self">Product</a> |
-          <a href="login.php" target="_self">Login</a> | 
-          <a href="index.php" target="_self">Profile</a> | 
-        </div>
+    <nav>
+        <a href="products.php" target="_self">Products</a> |
+        <a href="product.php" target="_self">Product</a> |
+        <a href="login.php" target="_self">Login</a> | 
+        <a href="index.php" target="_self">Profile</a> | 
+        <a href="cart.php" target="_self">Cart</a> |
+        <a href="checkout.php" target="_self">Checkout</a> |
+        <a href="reciept.php" target="_self">Reciept</a> |
     </nav>
+
       
       <main id="main-background">
           <div class="login">
