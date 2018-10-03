@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
     include_once('tools.php');
-    error_reporting(0);
+    // error_reporting(0);
     session_start();
     echo '<h3> $_POST contains:</h3>';
     preShow($_POST);
