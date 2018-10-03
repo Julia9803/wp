@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+    include_once('tools.php');
+    error_reporting(0);
+    session_start();
+    echo '<h3> $_POST contains:</h3>';
+    preShow($_POST);
+    echo '<h3> $_SESSION contains:</h3>';
+    preShow($_SESSION);
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -7,6 +16,8 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
+    <link id='skeleton' type="text/css" rel="stylesheet" href="css/skeleton.css">
+    <link id='skeleton' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
     <style>
       <?php
@@ -42,7 +53,7 @@
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here.</div>
+      </script> Yubin Gao, s3739865,A3-s3739865.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
