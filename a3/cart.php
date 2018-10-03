@@ -8,6 +8,9 @@
     echo '<h3> $_SESSION contains:</h3>';
     preShow($_SESSION);
 ?>
+<?php
+    styleCurrentNavLink('background-color: rgba(255,255,255,0.6);');
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -20,7 +23,7 @@
     <link id='normalize' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
     <style>
-      <?php
+      /* <?php
         // This PHP code inserts CSS to style the "current page" link in the nav area
         $here = $_SERVER['SCRIPT_NAME']; 
         echo '<h3>$here</h3>';
@@ -29,7 +32,7 @@
         echo "nav a[href$='$filename'] {
         box-shadow: 1px 1px 1px 2px navy;
       }";
-      ?>
+      ?> */
       
     </style>
   </head>
@@ -38,7 +41,7 @@
 
 <header class="opacity">
   <div>
-    <img src="images/logo.png" width="70px" height="70px"/><h3>Fantastic Makeup</h3>
+    <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
     </div>
 </header>
 

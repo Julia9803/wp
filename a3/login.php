@@ -15,7 +15,7 @@
   <body id="background">
     <header class="opacity">
         <div>
-            <img src="images/logo.png" width="70px" height="70px"/><h3>Fantastic Makeup</h3>
+            <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
         </div>
     </header>
 

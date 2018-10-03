@@ -5,8 +5,32 @@ function preShow( $arr, $returnAsString=false ) {
            return $ret;
          else
 echo $ret; }
-//       preShow($_POST);
-//       preShow($_SESSION);
-//       $aaarg = preShow($my_bad_array, true);
-//       echo "Why is \n $aaarg \n not working?";
+
+function printMyCode() {
+    $lines = file($_SERVER['SCRIPT_FILENAME']);
+    echo "<pre class='mycode'>\n";
+    foreach ($lines as $lineNo => $lineOfCode)
+       printf("%3u: %1s \n", $lineNo, rtrim(htmlentities($lineOfCode)));
+    echo "</pre>";
+}
+
+function php2js( $arr, $arrName ) {
+    $lineEnd="";
+    echo "<script>\n";
+    echo "  var $arrName = {\n";
+    foreach ($arr as $key => $value) {
+      echo "$lineEnd    $key : $value";
+      $lineEnd = ",\n";
+    }
+    echo "  \n};\n";
+    echo "</script>\n\n";
+  }
+
+function styleCurrentNavLink( $css ) {
+    $here = $_SERVER['SCRIPT_NAME'];
+    $bits = explode('/',$here);
+    $filename = $bits[count($bits)-1];
+    echo "<style>nav a[href$='$filename'] { $css }</style>";
+}
+
 ?>
