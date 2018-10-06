@@ -26,13 +26,13 @@
 
   <body id="background">
 
-<header class="opacity">
-    <div>
-        <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
-    </div>
-</header>
+    <header class="opacity">
+        <div>
+            <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
+        </div>
+    </header>
 
-<nav>
+<nav class="nav">
   <a href="products.php" target="_self">Products</a> |
   <a href="product.php" target="_self">Product</a> |
   <a href="login.php" target="_self">Login</a> | 
@@ -42,49 +42,38 @@
   <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
-<main>
-    <div class="author-banner"></div>
-    <div class="author">
-        <div class="author-head">
-           <img class="author-avatar" src="images/mypic.png" width="90px" height="90px" /> 
-        </div>
-        <h2>Julia</h2>
-        <p>The end is always near.</p>
-        <form class="form"
-                    method= "post"
-                    action="">
-    
-                  <div class="form-group">
-                      <label>Username：</label>
-                      <input id="username" class="form-input" type="text" value="julia9803" name="username" disabled="disabled"  required/>
-                  </div>
-                  <div class="form-group">
-                      <label>Background：</label>
-                      <input id="username" class="form-input" type="text" value="university student" name="background" disabled="disabled"  required/>
-                  </div>
-                  <div class="form-group">
-                      <label>Hobby：</label>
-                      <input id="hobby" class="form-input" type="text" value="shopping" name="hobby" disabled="disabled" required/>
-                  </div>
-                  <div class="form-group">
-                      <label>Focus：</label>
-                      <input id="focus" class="form-input" type="text" value="lipstick and eyeshadow" name="focus" disabled="disabled" required/>
-                  </div>
-              </form>
+<main class="main">
+    <div class="middle-title">
+      <h2>RECIEPT</h2>
     </div>
-    <div class="history">
-        <div class="detail-display">
-            <h3>History</h3>
-        </div>
-        <div class="titles">
-        <br/>
-        <img class="history-img" src="images/pic01.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic02.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic03.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic04.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic05.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic06.jpg" width="200px" height="200px">
-        </div>
+    <div class="bag-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product details</th>
+                    <th>Item price</th>
+                    <th>QTY</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOLITO COLLECTION</td>
+                    <td>$119.95</td>
+                    <td>1</td>
+                    <td>$119.95</td>
+                </tr>
+                <tr>
+                    <td>TOLITO COLLECTION</td>
+                    <td>$119.95</td>
+                    <td>1</td>
+                    <td>$119.95</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="checkout">
+        <button class="button-primary">PRINT</button>
     </div>
 </main>
 

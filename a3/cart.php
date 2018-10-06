@@ -42,7 +42,7 @@
   <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
-<main>
+<main class="main">
     <div class="middle-title">
       <h2>YOUR BAG</h2>
     </div>

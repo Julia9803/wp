@@ -42,9 +42,9 @@
   <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
-<main>
+<main class="main">
     <div class="middle-title">
-      <h2>YOUR BAG</h2>
+      <h2>CHECKOUT</h2>
     </div>
 
     <form action="checkout" method="post">
@@ -71,10 +71,10 @@
                 <label for="exampleEmailInput">Expiry Date</label>
                 <input class="u-full-width" type="email" name="expiry_date">
             </div>
+            <label for="address">Address</label>
+            <textarea class="u-full-width" name="address"></textarea>
+            <input class="button-primary" type="submit" value="submit">
         </div>
-        <label for="address">Address</label>
-        <textarea class="u-full-width" name="address"></textarea>
-        <input class="button-primary" type="submit" value="submit">
     </form>
     
 </main>
