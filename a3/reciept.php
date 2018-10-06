@@ -42,7 +42,7 @@
   <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
-<main class="main">
+<main id="main-background">
     <div class="middle-title">
       <h2>RECIEPT</h2>
     </div>

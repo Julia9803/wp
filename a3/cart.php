@@ -42,8 +42,7 @@
   <a href="reciept.php" target="_self">Reciept</a> |
 </nav>
 
-<main>
-    <div class="main">
+<main id="main-background">
     <div class="middle-title">
       <h2>YOUR BAG</h2>
     </div>
@@ -76,7 +75,6 @@
     <div class="checkout">
         <button class="button-primary">Checkout</button>
     </div>
-</div>
 </main>
 
     <footer class="footer">
