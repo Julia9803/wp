@@ -176,6 +176,10 @@
 }
 
 .main {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #fff;
+}
+.middle-tittle {
+    align-self: center;
 }
