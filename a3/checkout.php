@@ -48,7 +48,7 @@
     </div>
 
     <form action="checkout.php" method="post">
-        <div class="content-center">
+        <div class="middle-title">
             <div class="row">
                 <div class="six columns">
                 </div>
