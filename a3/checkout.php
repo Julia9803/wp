@@ -49,7 +49,7 @@
 
     <form action="checkout.php" method="post">
         <div class="row">
-            <div class="three columns">
+            <div class="six columns">
             </div>
             <div class="six columns">
                 <label for="exampleEmailInput">Name</label>
