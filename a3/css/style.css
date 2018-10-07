@@ -190,15 +190,10 @@
     margin-left: 35%;
     padding-bottom: 80px;
 }
-.bag-table {
-    align-self: center;
-    align-content: center;
-    margin: 50px 20px 50px 20px;
-}
 .table {
     margin-left: 50px;
     margin-right: 50px;
 }
 .button-center {
-     align-content: center;
+    margin-left: 45%;
 }
