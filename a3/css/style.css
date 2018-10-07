@@ -185,6 +185,9 @@
     text-align: center;
     margin: 20px 20px;
 }
+.content-center {
+    align-content: center;
+}
 .bag-table {
     align-self: center;
     align-content: center;

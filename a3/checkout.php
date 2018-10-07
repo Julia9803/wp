@@ -48,35 +48,37 @@
     </div>
 
     <form action="checkout.php" method="post">
-        <div class="row">
-            <div class="six columns">
-            </div>
-            <div class="six columns">
-                <label for="exampleEmailInput">Name</label>
-                <input class="u-full-width" type="text" name="name">
-            </div>
-            <div class="six columns">
-                <label for="exampleEmailInput">Email</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email">
-            </div>
-            <div class="six columns">
-                <label for="exampleEmailInput">Mobile Phone</label>
-                <input class="u-full-width" type="text" name="mobile_phone">
-            </div>
-            <div class="six columns">
-                <label for="exampleEmailInput">Credit Card</label>
-                <input class="u-full-width" type="text" name="credit_card">
-            </div>
-            <div class="six columns">
-                <label for="exampleEmailInput">Expiry Date</label>
-                <input class="u-full-width" type="email" name="expiry_date">
-            </div>
-            <div class="six columns">
-                <label for="address">Address</label>
-                <textarea class="u-full-width" name="address"></textarea>
-            </div>
-            <div class="six columns">
-                <input class="button-primary" type="submit" value="submit">
+        <div class="content-center">
+            <div class="row">
+                <div class="six columns">
+                </div>
+                <div class="six columns">
+                    <label for="exampleEmailInput">Name</label>
+                    <input class="u-full-width" type="text" name="name">
+                </div>
+                <div class="six columns">
+                    <label for="exampleEmailInput">Email</label>
+                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email">
+                </div>
+                <div class="six columns">
+                    <label for="exampleEmailInput">Mobile Phone</label>
+                    <input class="u-full-width" type="text" name="mobile_phone">
+                </div>
+                <div class="six columns">
+                    <label for="exampleEmailInput">Credit Card</label>
+                    <input class="u-full-width" type="text" name="credit_card">
+                </div>
+                <div class="six columns">
+                    <label for="exampleEmailInput">Expiry Date</label>
+                    <input class="u-full-width" type="email" name="expiry_date">
+                </div>
+                <div class="six columns">
+                    <label for="address">Address</label>
+                    <textarea class="u-full-width" name="address"></textarea>
+                </div>
+                <div class="six columns">
+                    <input class="button-primary" type="submit" value="submit">
+                </div>
             </div>
         </div>
     </form>
