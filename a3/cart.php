@@ -72,7 +72,7 @@
             </tbody>
         </table>
     </div>
-    <div class="content-center">
+    <div class="button-center">
         <button class="button-primary">Checkout</button>
     </div>
 </main>

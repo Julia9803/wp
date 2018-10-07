@@ -188,7 +188,7 @@
 }
 .content-center {
     margin-left: 35%;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 .bag-table {
     align-self: center;
@@ -198,4 +198,7 @@
 .table {
     margin-left: 50px;
     margin-right: 50px;
+}
+.button-center {
+    margin: 0 auto;
 }
