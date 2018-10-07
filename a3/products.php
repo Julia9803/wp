@@ -13,12 +13,13 @@
     $fp = fopen('products.txt','r'); 
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
-            for ($x=1; $x<count($cells); $x++) 
+            for ($x=1; $x<count($cells); $x++) {
+                echo $cells[$x];
                 $products[$cells[0]][$headings[$x]]=$cells[$x]; 
-            } 
+            }
         } 
+    } 
    fclose($fp);
-   echo $products;
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
