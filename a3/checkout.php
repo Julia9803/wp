@@ -47,7 +47,7 @@
       <h2>CHECKOUT</h2>
     </div>
 
-    <form action="checkout" method="post">
+    <form action="checkout.php" method="post">
         <div class="row">
             <div class="three columns">
             </div>
@@ -71,9 +71,13 @@
                 <label for="exampleEmailInput">Expiry Date</label>
                 <input class="u-full-width" type="email" name="expiry_date">
             </div>
-            <label for="address">Address</label>
-            <textarea class="u-full-width" name="address"></textarea>
-            <input class="button-primary" type="submit" value="submit">
+            <div class="six columns">
+                <label for="address">Address</label>
+                <textarea class="u-full-width" name="address"></textarea>
+            </div>
+            <div class="six columns">
+                <input class="button-primary" type="submit" value="submit">
+            </div>
         </div>
     </form>
     
