@@ -14,7 +14,7 @@
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
             for ($x=1; $x<count($cells); $x++) {
-                echo $cells[$x];
+                echo '<h3>$cells[$x]</h3>';
                 $products[$cells[0]][$headings[$x]]=$cells[$x]; 
             }
         } 
