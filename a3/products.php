@@ -9,7 +9,7 @@
     preShow($_SESSION);
 ?>
 <?php
-    $_SESSION['products'] = $products;
+    $products;
     $fp = fopen('products.txt','r'); 
     preShow($fp);
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
@@ -21,6 +21,7 @@
         } 
     } 
    fclose($fp);
+   $_SESSION['products'] = $products;
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
