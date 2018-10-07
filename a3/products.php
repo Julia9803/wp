@@ -11,7 +11,6 @@
 <?php
     $products;
     $fp = fopen('products.txt','r'); 
-    preShow($fp);
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
             for ($x=1; $x<count($cells); $x++) {
@@ -21,6 +20,8 @@
         } 
     } 
    fclose($fp);
+   echo '<h3> $products contains:</h3>';
+   preShow($products);
    $_SESSION['products'] = $products;
 ?>
 <?php
