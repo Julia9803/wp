@@ -9,6 +9,7 @@
     preShow($_SESSION);
 ?>
 <?php
+    $products;
     $fp = fopen('products.txt','r'); 
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
