@@ -9,15 +9,15 @@
     preShow($_SESSION);
 ?>
 <?php
-    $fp = fopen($products, "r");
-    flock($fp, LOCK_SH);
-    $headings = fgetcsv($fp, 0, "\t");
-    while ($aLineOfCells = fgetcsv($fp, 0, "\t")) {
-      $records[] = $aLineOfCells;
-    }
-    echo $records;
-    flock($fp, LOCK_UN);
-    fclose($fp);
+    $fp = fopen('products.txt','r'); 
+    if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
+        while ( $cells = fgetcsv($fp, 0, "\t") ) { 
+            for ($x=1; $x<count($cells); $x++) 
+                $products[$cells[0]][$headings[$x]]=$cells[$x]; 
+            } 
+        } 
+   fclose($fp);
+   echo $products;
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
