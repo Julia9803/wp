@@ -48,11 +48,7 @@
     </div>
 
     <form action="checkout.php" method="post">
-        <div class="row">
-            <div class="three columns">
-                <input display=none>
-            </div>
-        </div>
+        <div class="content-center">
             <div class="row">
                 <div class="six columns">
                 </div>
@@ -84,7 +80,7 @@
                     <input class="button-primary" type="submit" value="submit">
                 </div>
             </div>
-        <!-- </div> -->
+        </div>
     </form>
     
 </main>
