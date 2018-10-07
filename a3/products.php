@@ -9,6 +9,17 @@
     preShow($_SESSION);
 ?>
 <?php
+    $fp = fopen($products, "r");
+    flock($fp, LOCK_SH);
+    $headings = fgetcsv($fp, 0, "\t");
+    while ($aLineOfCells = fgetcsv($fp, 0, "\t")) {
+      $records[] = $aLineOfCells;
+    }
+    echo $records;
+    flock($fp, LOCK_UN);
+    fclose($fp);
+?>
+<?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <html lang='en'>
@@ -61,7 +72,7 @@
                     <h2>ZOEVA</h2>
                     <p>Screen Queen Highlighter Palette</p>
                     <p class="price">$25.00</p>
-                    <a href="product.php">see more...</a>
+                    <a href="products.php?id=M001">see more...</a>
                 </span>
             </article>
             
