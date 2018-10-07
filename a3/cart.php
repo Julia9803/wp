@@ -9,7 +9,7 @@
     preShow($_SESSION);
 ?>
 <?php
-    styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
+    styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px black; padding: 1px');
 ?>
 <html lang='en'>
   <head>
@@ -46,7 +46,7 @@
     <div class="middle-title">
       <h2>YOUR BAG</h2>
     </div>
-    <div class="bag-table">
+    <div class="table">
         <table class="u-full-width">
             <thead>
                 <tr>
@@ -72,7 +72,7 @@
             </tbody>
         </table>
     </div>
-    <div class="checkout">
+    <div class="content-center">
         <button class="button-primary">Checkout</button>
     </div>
 </main>
