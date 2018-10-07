@@ -46,8 +46,8 @@
     <div class="middle-title">
       <h2>RECIEPT</h2>
     </div>
-    <div class="bag-table">
-        <table>
+    <div class="table">
+        <table class="u-full-width">
             <thead>
                 <tr>
                     <th>Product details</th>
@@ -72,7 +72,7 @@
             </tbody>
         </table>
     </div>
-    <div class="checkout">
+    <div class="button-center">
         <button class="button-primary">PRINT</button>
     </div>
 </main>
