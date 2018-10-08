@@ -104,13 +104,14 @@
                         <td>'.$_SESSION['cart'][$i]['title'].'</td>
                         <td>'.$_SESSION['cart'][$i]['price'].'</td>
                         <td>'.$_SESSION['cart'][$i]['qty'].'</td>
-                        <script>
-                            price = sum_price('.$_SESSION['cart'][$i]['price'].','.$_SESSION['cart'][$i]['qty'].')
-                            alert(price)
-                            document.write("<td>"+ price + "</td>")
-                        </script>
+                        <td>'.sum_price($_SESSION['cart'][$i]['price'],$_SESSION['cart'][$i]['qty']).'</td>
                     </tr>';
                     }
+                ?>
+                <?php
+                function sum_price($price,$qty) {
+                    return $price*$qty;
+                }
                 ?>
             </tbody>
         </table>
