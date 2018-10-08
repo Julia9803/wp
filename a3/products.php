@@ -9,11 +9,6 @@
     preShow($_SESSION);
 ?>
 <?php
-    $myfile = fopen("products.txt", "r") or die("Unable to open file!");
-    echo fread($myfile,filesize("products.txt"));
-    fclose($myfile);
-?>
-<?php
     ini_set("error_reporting","E_ALL & ~E_NOTICE"); 
     $products; $cells; $headings;
     $fp = fopen('products.txt','r'); 
@@ -21,7 +16,6 @@
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
             for ($x=1; $x<count($cells); $x++) {
                 $products[$cells[0]][$headings[$x]]=$cells[$x]; 
-                echo '<h3>'.$products.'</h3>';
             }
         } 
     } 
@@ -69,9 +63,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic01.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2>Marc Jacobs Beauty</h2>
-                    <p>Re(marc)able Full Cover Foundation Concentrate</p>
-                    <p class="price">$80.00</p>
+                    <h2>$products[M001][Title]</h2>
+                    <p>$products[M001][Description]</p>
+                    <p class="price">$products[M001][Price]</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -80,9 +74,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic02.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2>ZOEVA</h2>
-                    <p>Screen Queen Highlighter Palette</p>
-                    <p class="price">$25.00</p>
+                    <h2>$products[M002][Title]</h2>
+                    <p>$products[M002][Description]</p>
+                    <p class="price">$products[M002][Price]</p>
                     <a href="products.php?id=M001">see more...</a>
                 </span>
             </article>
@@ -91,9 +85,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic03.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2>Make Up For Ever</h2>
-                    <p>Mist & Fix Setting Spray</p>
-                    <p class="price">$19.00</p>
+                    <h2>$products[M003][Title]</h2>
+                    <p>$products[M003][Description]</p>
+                    <p class="price">$products[M003][Price]</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -103,9 +97,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic04.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2>ZOEVA</h2>
-                    <p>Blush Palette</p>
-                    <p class="price">$36.00</p>
+                    <h2>$products[M004][Title]</h2>
+                    <p>$products[M004][Description]</p>
+                    <p class="price">$products[M004][Price]</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -114,9 +108,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic05.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2>Anastasia Beverly Hills</h2>
-                    <p>Soft Glam Eye Shadow Palette</p>
-                    <p class="price">$75.00</p>
+                    <h2>$products[M005][Title]</h2>
+                    <p>$products[M005][Description]</p>
+                    <p class="price">$products[M005][Price]</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -125,9 +119,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic06.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2>IT Cosmetics</h2>
-                    <p>Your Skin But Better CC Cream SPF 50+</p>
-                    <p class="price">$61.00</p>
+                    <h2>$products[M006][Title]</h2>
+                    <p>$products[M006][Description]</p>
+                    <p class="price">$products[M006][Price]</p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
