@@ -73,7 +73,7 @@
     <main>
         <article class="titles">
             <div class="col5">
-                <img class="img-product" src="images/'.$_SESSION['products'][$_GET['id']].'.jpg">
+                <img class="img-product" src="images/'.$_GET['id'].'.jpg">
                 <!-- get this picture only for education use from https://www.sephora.com.au/ -->
             </div>
         
