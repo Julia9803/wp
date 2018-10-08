@@ -19,8 +19,8 @@
             }
         } 
     } 
-    echo '<h3> $products contains:</h3>';
-    preShow($products);
+    // echo '<h3> $products contains:</h3>';
+    // preShow($products);
     $_SESSION['products'] = $products;
     fclose($fp);
 ?>
@@ -63,9 +63,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic01.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $_SESSION['products']['M001']['Title'] ?></h2>
-                    <p><?php $products['M001']['Description'] ?></p>
-                    <p class="price"><?php $products['M001']['Price'] ?></p>
+                    <h2><?php echo $_SESSION['products']['M001']['Title'] ?></h2>
+                    <p><?php echo $products['M001']['Description'] ?></p>
+                    <p class="price"><?php echo $products['M001']['Price'] ?></p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -74,9 +74,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic02.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $products['M002']['Title'] ?></h2>
-                    <p><?php $products['M002']['Description'] ?></p>
-                    <p class="price"><?php $products['M002']['Price'] ?></p>
+                    <h2><?php echo $products['M002']['Title'] ?></h2>
+                    <p><?php echo $products['M002']['Description'] ?></p>
+                    <p class="price"><?php echo $products['M002']['Price'] ?></p>
                     <a href="products.php?id=M001">see more...</a>
                 </span>
             </article>
@@ -85,9 +85,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic03.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $products['M003']['Title'] ?></h2>
-                    <p><?php $products['M003']['Description'] ?></p>
-                    <p class="price"><?php $products['M003']['Price'] ?></p>
+                    <h2><?php echo $products['M003']['Title'] ?></h2>
+                    <p><?php echo $products['M003']['Description'] ?></p>
+                    <p class="price"><?php echo $products['M003']['Price'] ?></p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -97,9 +97,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic04.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $products['M004']['Title'] ?></h2>
-                    <p><?php $products['M004']['Description'] ?></p>
-                    <p class="price"><?php $products['M004']['Price'] ?></p>
+                    <h2><?php echo $products['M004']['Title'] ?></h2>
+                    <p><?php echo $products['M004']['Description'] ?></p>
+                    <p class="price"><?php echo $products['M004']['Price'] ?></p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -108,9 +108,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic05.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $products['M005']['Title'] ?></h2>
-                    <p><?php $products['M005']['Description'] ?></p>
-                    <p class="price"><?php $products['M005']['Price'] ?></p>
+                    <h2><?php echo $products['M005']['Title'] ?></h2>
+                    <p><?php echo $products['M005']['Description'] ?></p>
+                    <p class="price"><?php echo $products['M005']['Price'] ?></p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
@@ -119,9 +119,9 @@
                 <span class="image">
                     <img class="img-style" src="images/pic06.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $products['M006']['Title'] ?></h2>
-                    <p><?php $products['M006']['Description'] ?></p>
-                    <p class="price"><?php $products['M006']['Price'] ?></p>
+                    <h2><?php echo $products['M006']['Title'] ?></h2>
+                    <p><?php echo $products['M006']['Description'] ?></p>
+                    <p class="price"><?php echo $products['M006']['Price'] ?></p>
                     <a href="product.php">see more...</a>
                 </span>
             </article>
