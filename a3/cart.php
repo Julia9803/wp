@@ -106,6 +106,7 @@
                         <td>'.$_SESSION['cart'][$i]['qty'].'</td>
                         <script>
                             price = sum_price('.$_SESSION['cart'][$i]['price'].','.$_SESSION['cart'][$i]['qty'].')
+                            alert(price)
                             document.write("<td>"+ price + "</td>")
                         </script>
                     </tr>';
@@ -119,7 +120,7 @@
             <button class="button-primary" name="checkout">Checkout</button>
         </form>
         <form method="post" action="cart.php">
-            <button class="button-primary" name="cancel"> Cancel </button>
+            <button class="button-primary" name="cancel">  Cancel  </button>
         </form>
     </div>
 </main>
