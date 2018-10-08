@@ -12,13 +12,6 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px black; padding: 1px');
 ?>
 <?php
-    if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
-        if(check_oid() && check_option()) {
-            $_SESSION['cart'][$_POST['id']]['oid'] = $_POST['oid'];
-            $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
-        }
-    }
-
     function check_oid() {
         if(strlen($_POST['oid']) != 0){
             return true;
@@ -32,6 +25,15 @@
             return true;
         } else {
             return false;
+        }
+    }
+
+    if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
+        if(check_oid() && check_option()) {
+            $_SESSION['cart'][$_POST['id']]['oid'] = $_POST['oid'];
+            $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
+            echo '<h3> $_SESSION contains:</h3>';
+            preShow($_SESSION);
         }
     }
 ?>
