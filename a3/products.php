@@ -59,9 +59,9 @@
 
     <?php
     function this_id_actually_exists($id) {
-        echo '<h3>'.$products[$id]['OID'].'</h3>';
-        echo '<h3>'.count($products[$id]).'</h3>';
-        if(count($products[$id]) != 0){
+        echo '<h3>'.$_SESSION['products'][$id]['OID'].'</h3>';
+        echo '<h3>'.count($_SESSION['products'][$id]).'</h3>';
+        if(count($_SESSION['products'][$id]) != 0){
             return true;
         }else {
             return false;
