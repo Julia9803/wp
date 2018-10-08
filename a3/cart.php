@@ -31,11 +31,22 @@
 <?php
     if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
         if(check_oid() && check_option()) {
-            $_SESSION['cart'][$_POST['id']]['oid'] = $_POST['oid'];
-            $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
+            static $num = 1;
+            $_SESSION['cart'][$num]['oid'] = $_POST['oid'];
+            $_SESSION['cart'][$num]['qty'] = $_POST['qty'];
+            $_SESSION['cart'][$num]['id'] = $_POST['id'];
+            $_SESSION['cart'][$num]['title'] = $_SESSION['products'][$_POST['id']]['Title'];
+            $_SESSION['cart'][$num]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
+            $num += 1;
             echo '<h3> $_SESSION contains:</h3>';
             preShow($_SESSION);
         }
+    }
+?>
+<?php
+    if(isset($_POST['cancel'])) {
+        unset($_SESSION['cart']);
+        header("Location: products.php");
     }
 ?>
 <html lang='en'>
@@ -84,23 +95,27 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>TOLITO COLLECTION</td>
-                    <td>$119.95</td>
-                    <td>1</td>
-                    <td>$119.95</td>
-                </tr>
-                <tr>
-                    <td>TOLITO COLLECTION</td>
-                    <td>$119.95</td>
-                    <td>1</td>
-                    <td>$119.95</td>
-                </tr>
+                <?php
+                    for($i = 0;$i<$num;$i++){
+                    echo 
+                    '<tr>
+                        <td>'.$_SESSION['cart']['title'].'</td>
+                        <td>'.$_SESSION['cart']['price'].'</td>
+                        <td>'.$_SESSION['cart']['qty'].'</td>
+                        <td>sum_price('.$_SESSION['cart']['price'].','.$_SESSION['cart']['qty'].')</td>
+                    </tr>';
+                    }
+                ?>
             </tbody>
         </table>
     </div>
     <div class="button-center">
-        <button class="button-primary">Checkout</button>
+        <form method="post" action="checkout.php">
+            <button class="button-primary" name="checkout">Checkout</button>
+        </form>
+        <form method="post" action="cart.php">
+            <button class="button-primary" name="cancel">Cancel</button>
+        </form>
     </div>
 </main>
 

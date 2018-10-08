@@ -19,8 +19,6 @@
             }
         } 
     } 
-    // echo '<h3> $products contains:</h3>';
-    // preShow($products);
     $_SESSION['products'] = $products;
     fclose($fp);
 ?>
