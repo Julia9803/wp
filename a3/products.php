@@ -82,16 +82,16 @@
                       action="cart.php">
                 <div class="detail-display">
                     <h2>'.$_SESSION['products'][$_GET['id']]['Title'].'</h2>
-                    <input type="hidden" name="id" value="'.$_SESSION['products'][$_GET['id']].'"/>
+                    <input type="hidden" name="id" value="'.$_GET['id'].'"/>
                      <p>'.$_SESSION['products'][$_GET['id']]['Description'].'</p>
                 </div>
                 <div class="detail-display">
                     <h2 class="price">$'.$_SESSION['products'][$_GET['id']]['Price'].'</h2>
                 </div>
                  <div class="detail-display">
-                     <label>COLOR</label>
+                     <label>OPTION</label>
                      <select name="option">
-                         <option value="oid">'.$_SESSION['products'][$_GET['id']]['Option'].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['Option'].'">'.$_SESSION['products'][$_GET['id']]['Option'].'</option>
                      </select>
                     </div>
                     <div class="detail-display">
