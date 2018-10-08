@@ -13,7 +13,7 @@
 ?>
 <?php
     if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
-        if($_POST['qty'] > 0 && check_oid() && check_option()) {
+        if(check_oid() && check_option()) {
             $_SESSION['cart'][$_POST['id']]['oid'] = $_POST['oid'];
             $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
         }
@@ -28,7 +28,7 @@
     }
 
     function check_option() {
-        if($_SESSION['products'][$_POST['id']]['Option'] = $_POST['oid']) {
+        if($_SESSION['products'][$_POST['id']]['OID'] = $_POST['oid']) {
             return true;
         } else {
             return false;
