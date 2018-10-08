@@ -9,21 +9,26 @@
     preShow($_SESSION);
 ?>
 <?php
+    $myfile = fopen("products.txt", "r") or die("Unable to open file!");
+    echo fread($myfile,filesize("products.txt"));
+    fclose($myfile);
+?>
+<?php
     ini_set("error_reporting","E_ALL & ~E_NOTICE"); 
     $products; $cells; $headings;
     $fp = fopen('products.txt','r'); 
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
             for ($x=1; $x<count($cells); $x++) {
-                echo '<h3>'.$cells[$x].'</h3>';
                 $products[$cells[0]][$headings[$x]]=$cells[$x]; 
+                echo '<h3>'.$products.'</h3>';
             }
         } 
     } 
-   fclose($fp);
-   echo '<h3> $products contains:</h3>';
-   preShow($products);
-   $_SESSION['products'] = $products;
+    echo '<h3> $products contains:</h3>';
+    preShow($products);
+    $_SESSION['products'] = $products;
+    fclose($fp);
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
