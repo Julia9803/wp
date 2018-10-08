@@ -104,7 +104,10 @@
                         <td>'.$_SESSION['cart'][$i]['title'].'</td>
                         <td>'.$_SESSION['cart'][$i]['price'].'</td>
                         <td>'.$_SESSION['cart'][$i]['qty'].'</td>
-                        <td value="sum_price('.$_SESSION['cart'][$i]['price'].','.$_SESSION['cart'][$i]['qty'].')"></td>
+                        <script>
+                            price = sum_price('.$_SESSION['cart'][$i]['price'].','.$_SESSION['cart'][$i]['qty'].')
+                            document.write("<td>"+ price + "</td>")
+                        </script>
                     </tr>';
                     }
                 ?>
