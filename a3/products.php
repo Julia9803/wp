@@ -36,6 +36,7 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
+    <script src='js/product.js'></script>
   </head>
 
   <body id="background">
@@ -56,17 +57,69 @@
         <a href="reciept.php" target="_self">Reciept</a> |
     </nav>
 
+    <?php
+    function this_id_actually_exists($id) {
+        return isset($products[$id]);
+    }
 
+    if(isset($_GET['id']) && this_id_actually_exists($_GET['id'])) {
+        echo '
     <main>
+        <article class="titles">
+            <div class="col5">
+                <img class="img-product" src="images/pic01.jpg">
+                <!-- get this picture only for education use from https://www.sephora.com.au/ -->
+            </div>
+        
+            <div class="col7">
+                <form method="post" onsubmit="return check()"
+                      action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+                <div class="detail-display">
+                    <h2>Marc Jacobs Beauty</h2>
+                    <input type="hidden" name="id" value="001"/>
+                     <p>Re(marc)able Full Cover Foundation Concentrate</p>
+                </div>
+                <div class="detail-display">
+                    <h2 class="price">$80.00</h2>
+                </div>
+                 <div class="detail-display">
+                     <label>COLOR</label>
+                     <select name="option">
+                         <option value="Ivory">Ivory</option>
+                         <option value="Bisque">Bisque</option>
+                         <option value="Beige">Beige</option>
+                         <option value="Golden">Golden</option>
+                         <option value="Honey">Honey</option>
+                         <option value="Cocoa">Cocoa</option>
+                     </select>
+                    </div>
+                    <div class="detail-display">
+                        <label>QTY</label>
+                        <input type="button" id="minus" value="-" onclick="clickMinus()">
+                        <input id="qty" name="qty" type="text" value="1">
+                        <input type="button" id="plus" value="+" onclick="clickPlus()">
+                    </div>
+                    <div class="detail-display">
+                        <button class="form-button" type="submit">ADD TO BAG</button>
+                    </div>
+                </form>
+                <br/>
+                <br/>
+            </div>
+        </article>
+    </main>';
+    } else {
+        echo 'a'.$products['M001']['Title'].'b';
+        echo '<main>
         <section class="titles" id="main-background">
             <article class="box" id="inner-background">
                 <span class="image">
                     <img class="img-style" src="images/pic01.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php echo $_SESSION['products']['M001']['Title'] ?></h2>
-                    <p><?php echo $products['M001']['Description'] ?></p>
-                    <p class="price"><?php echo $products['M001']['Price'] ?></p>
-                    <a href="product.php">see more...</a>
+                    <h2>'.$products['M001']['Title'].'</h2>
+                    <p>'.$products['M001']['Description'].'</p>
+                    <p class="price">"$" '.$products['M001']['Price']. '</p>
+                    <a href="product.php?id=M001">see more...</a>
                 </span>
             </article>
             
@@ -74,10 +127,10 @@
                 <span class="image">
                     <img class="img-style" src="images/pic02.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php echo $products['M002']['Title'] ?></h2>
-                    <p><?php echo $products['M002']['Description'] ?></p>
-                    <p class="price"><?php echo $products['M002']['Price'] ?></p>
-                    <a href="products.php?id=M001">see more...</a>
+                    <h2>'.$products['M002']['Title'].'</h2>
+                    <p>'.$products['M002']['Description'].'</p>
+                    <p class="price">"$" '.$products['M002']['Price'].'</p>
+                    <a href="products.php?id=M002">see more...</a>
                 </span>
             </article>
             
@@ -85,10 +138,10 @@
                 <span class="image">
                     <img class="img-style" src="images/pic03.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php echo $products['M003']['Title'] ?></h2>
-                    <p><?php echo $products['M003']['Description'] ?></p>
-                    <p class="price"><?php echo $products['M003']['Price'] ?></p>
-                    <a href="product.php">see more...</a>
+                    <h2>'.$products['M003']['Title'].'</h2>
+                    <p>'.$products['M003']['Description'].'</p>
+                    <p class="price">"$" '.$products['M003']['Price'].'</p>
+                    <a href="product.php?id=M003">see more...</a>
                 </span>
             </article>
         </section>
@@ -97,10 +150,10 @@
                 <span class="image">
                     <img class="img-style" src="images/pic04.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php echo $products['M004']['Title'] ?></h2>
-                    <p><?php echo $products['M004']['Description'] ?></p>
-                    <p class="price"><?php echo $products['M004']['Price'] ?></p>
-                    <a href="product.php">see more...</a>
+                    <h2>' .$products['M004']['Title'].'</h2>
+                    <p>' .$products['M004']['Description'].'</p>
+                    <p class="price">"$" '.$products['M004']['Price'].'</p>
+                    <a href="product.php?id=M004">see more...</a>
                 </span>
             </article>
             
@@ -108,10 +161,10 @@
                 <span class="image">
                     <img class="img-style" src="images/pic05.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php echo $products['M005']['Title'] ?></h2>
-                    <p><?php echo $products['M005']['Description'] ?></p>
-                    <p class="price"><?php echo $products['M005']['Price'] ?></p>
-                    <a href="product.php">see more...</a>
+                    <h2>' .$products['M005']['Title'].'</h2>
+                    <p>' .$products['M005']['Description'].'</p>
+                    <p class="price">"$" '.$products['M005']['Price'].'</p>
+                    <a href="product.php?id=M005">see more...</a>
                 </span>
             </article>
             
@@ -119,14 +172,16 @@
                 <span class="image">
                     <img class="img-style" src="images/pic06.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php echo $products['M006']['Title'] ?></h2>
-                    <p><?php echo $products['M006']['Description'] ?></p>
-                    <p class="price"><?php echo $products['M006']['Price'] ?></p>
-                    <a href="product.php">see more...</a>
+                    <h2>' .$products['M006']['Title'].'</h2>
+                    <p>' .$products['M006']['Description'].'</p>
+                    <p class="price">"$" '.$products['M006']['Price'].'</p>
+                    <a href="product.php?id=M006">see more...</a>
                 </span>
             </article>
         </section>
-    </main>
+    </main>';
+    }
+    ?>
 
     <footer class="footer">
       <div>&copy;<script>
