@@ -63,7 +63,7 @@
                 <span class="image">
                     <img class="img-style" src="images/pic01.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
-                    <h2><?php $products['M001']['Title'] ?></h2>
+                    <h2><?php $_SESSION['products']['M001']['Title'] ?></h2>
                     <p><?php $products['M001']['Description'] ?></p>
                     <p class="price"><?php $products['M001']['Price'] ?></p>
                     <a href="product.php">see more...</a>
