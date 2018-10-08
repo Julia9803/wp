@@ -1,5 +1,5 @@
 function validate_cardNumber() {
-    var cardNumber = document.getElementById("visaIcon").value;
+    var cardNumber = document.getElementById("credit_card").value;
     cardNumber = cardNumber.trim();
     alert(cardNumber);
     if(cardNumber[0] == "4" && cardNumber.length >= 13 && cardNumber.length <= 16) {
