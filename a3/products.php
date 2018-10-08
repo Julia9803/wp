@@ -59,7 +59,7 @@
 
     <?php
     function this_id_actually_exists($id) {
-        echo 'this_id_actually_exists:' + isset($products[$id]);
+        echo '<h3>this_id_actually_exists:'.isset($products[$id]).'</h3>';
         return isset($products[$id]);
     }
 
