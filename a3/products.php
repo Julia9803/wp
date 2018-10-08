@@ -90,7 +90,7 @@
                 </div>
                  <div class="detail-display">
                      <label>OPTION</label>
-                     <select name="option">
+                     <select name="oid">
                          <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'].'</option>
                      </select>
                     </div>

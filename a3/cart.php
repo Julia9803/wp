@@ -27,7 +27,8 @@
             return false;
         }
     }
-
+?>
+<?php
     if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
         if(check_oid() && check_option()) {
             $_SESSION['cart'][$_POST['id']]['oid'] = $_POST['oid'];
