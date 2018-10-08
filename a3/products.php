@@ -9,6 +9,7 @@
     preShow($_SESSION);
 ?>
 <?php
+    ini_set("error_reporting","E_ALL & ~E_NOTICE"); 
     $products; $cells; $headings;
     $fp = fopen('products.txt','r'); 
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
