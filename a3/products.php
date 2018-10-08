@@ -59,7 +59,8 @@
 
     <?php
     function this_id_actually_exists($id) {
-        if(strlen($products[$id]['OID']) != 0 ){
+        echo '<h3>'.$products[$id].'</h3>';
+        if($products[$id] != null){
             return true;
         }else {
             return false;
