@@ -101,7 +101,7 @@
                     for($i = 1;$i<=$num;$i++){
                     echo 
                     '<tr>
-                        <td>'.$_SESSION['cart'][$i]['title'].'</td>
+                        <td>'.$_SESSION['cart'][$i]['title'], $_SESSION['cart'][$i]['oid'].'</td>
                         <td>'.$_SESSION['cart'][$i]['price'].'</td>
                         <td>'.$_SESSION['cart'][$i]['qty'].'</td>
                         <td>'.sum_price($_SESSION['cart'][$i]['price'],$_SESSION['cart'][$i]['qty']).'</td>
@@ -110,7 +110,7 @@
                 ?>
                 <?php
                 function sum_price($price,$qty) {
-                    return $price*$qty;
+                    return round($price*$qty,2);
                 }
                 ?>
             </tbody>

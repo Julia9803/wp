@@ -11,6 +11,31 @@
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
+<?php
+    function validate_name($name) {
+
+    }
+
+    function validate_email($email) {
+
+    }
+
+    function validate_address($address) {
+
+    }
+
+    function validate_mobilePhone($phoneNumber) {
+
+    }
+
+    function validate_creditCard($cardNumber) {
+
+    }
+
+    function validate_expiryDate($expiryDate) {
+
+    }
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -22,6 +47,7 @@
     <link id='skeleton' type="text/css" rel="stylesheet" href="css/skeleton.css">
     <link id='normalize' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
+    <script src='js/checkout.js'></script>
   </head>
 
   <body id="background">
@@ -67,6 +93,7 @@
                 <div class="six columns">
                     <label for="exampleEmailInput">Credit Card</label>
                     <input class="u-full-width" type="text" name="credit_card">
+                    <img src="images/visa.png" id="visaIcon" style="display=none" oninput="validate_cardNumber()" />
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Expiry Date</label>
