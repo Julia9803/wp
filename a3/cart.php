@@ -96,7 +96,7 @@
             </thead>
             <tbody>
                 <?php
-                    for($i = 0;$i<$num;$i++){
+                    for($i = 1;$i<=$num;$i++){
                     echo 
                     '<tr>
                         <td>'.$_SESSION['cart']['title'].'</td>
@@ -114,7 +114,7 @@
             <button class="button-primary" name="checkout">Checkout</button>
         </form>
         <form method="post" action="cart.php">
-            <button class="button-primary" name="cancel">Cancel</button>
+            <button class="button-primary" name="cancel"> Cancel </button>
         </form>
     </div>
 </main>
