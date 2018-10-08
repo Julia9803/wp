@@ -59,9 +59,11 @@
 
     <?php
     function this_id_actually_exists($id) {
-        echo '<h3>'.$id.'</h3>';
-        echo '<h3>this_id_actually_exists:'.isset($products[$id]['OID']).'</h3>';
-        return isset($products[$id]['OID']);
+        if($products[$id]['OID'] !== null){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     if(isset($_GET['id']) && this_id_actually_exists($_GET['id'])) {
