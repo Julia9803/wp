@@ -59,8 +59,9 @@
 
     <?php
     function this_id_actually_exists($id) {
-        echo '<h3>this_id_actually_exists:'.isset($products[$id]).'</h3>';
-        return isset($products[$id]);
+        echo '<h3>'.$id.'</h3>';
+        echo '<h3>this_id_actually_exists:'.isset($products[$id]['OID']).'</h3>';
+        return isset($products[$id]['OID']);
     }
 
     if(isset($_GET['id']) && this_id_actually_exists($_GET['id'])) {
@@ -110,7 +111,6 @@
         </article>
     </main>';
     } else {
-        echo 'a'.$products['M001']['Title'].'b';
         echo '<main>
         <section class="titles" id="main-background">
             <article class="box" id="inner-background">

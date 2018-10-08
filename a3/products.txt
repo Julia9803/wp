@@ -1,7 +1,7 @@
 ID	OID	Title	Description	Option	Price
 M001	LRG	Marc Jacobs Beauty	Re(marc)able Full Cover Foundation Concentrate	30ml	80.00
 M002	SML	ZOEVA	Screen Queen Highlighter Palette	30g	25.00
-M003	SML	Make Up For Ever	Mist & Fix Setting Spray	15ml    19.00
+M003	SML	Make Up For Ever	Mist & Fix Setting Spray	15ml	19.00
 M004	LRG	ZOEVA	Blush Palette	30g	36.00
 M005	LRG	Anastasia Beverly Hills	Soft Glam Eye Shadow Palette	40g	75.00
 M006	LRG	IT Cosmetics	Your Skin But Better CC Cream SPF 50+	61g	61.00
