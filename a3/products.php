@@ -59,7 +59,7 @@
 
     <?php
     function this_id_actually_exists($id) {
-        if($products[$id]['OID'] !== null){
+        if(strlen($products[$id]['OID']) != 0 ){
             return true;
         }else {
             return false;
