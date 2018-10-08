@@ -59,8 +59,8 @@
 
     <?php
     function this_id_actually_exists($id) {
-        echo '<h3>'.$_SESSION['products'][$id]['OID'].'</h3>';
-        echo '<h3>'.count($_SESSION['products'][$id]).'</h3>';
+        // echo '<h3>'.$_SESSION['products'][$id]['OID'].'</h3>';
+        // echo '<h3>'.count($_SESSION['products'][$id]).'</h3>';
         if(count($_SESSION['products'][$id]) != 0){
             return true;
         }else {
@@ -73,30 +73,25 @@
     <main>
         <article class="titles">
             <div class="col5">
-                <img class="img-product" src="images/pic01.jpg">
+                <img class="img-product" src="images/'.$_SESSION['products'][$_GET['id']].'.jpg">
                 <!-- get this picture only for education use from https://www.sephora.com.au/ -->
             </div>
         
             <div class="col7">
                 <form method="post" onsubmit="return check()"
-                      action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php">
+                      action="cart.php">
                 <div class="detail-display">
-                    <h2>Marc Jacobs Beauty</h2>
-                    <input type="hidden" name="id" value="001"/>
-                     <p>Re(marc)able Full Cover Foundation Concentrate</p>
+                    <h2>'.$_SESSION['products'][$_GET['id']]['Title'].'</h2>
+                    <input type="hidden" name="id" value="'.$_SESSION['products'][$_GET['id']].'"/>
+                     <p>'.$_SESSION['products'][$_GET['id']]['Description'].'</p>
                 </div>
                 <div class="detail-display">
-                    <h2 class="price">$80.00</h2>
+                    <h2 class="price">$'.$_SESSION['products'][$_GET['id']]['Price'].'</h2>
                 </div>
                  <div class="detail-display">
                      <label>COLOR</label>
                      <select name="option">
-                         <option value="Ivory">Ivory</option>
-                         <option value="Bisque">Bisque</option>
-                         <option value="Beige">Beige</option>
-                         <option value="Golden">Golden</option>
-                         <option value="Honey">Honey</option>
-                         <option value="Cocoa">Cocoa</option>
+                         <option value="oid">'.$_SESSION['products'][$_GET['id']]['Option'].'</option>
                      </select>
                     </div>
                     <div class="detail-display">
@@ -106,7 +101,7 @@
                         <input type="button" id="plus" value="+" onclick="clickPlus()">
                     </div>
                     <div class="detail-display">
-                        <button class="form-button" type="submit">ADD TO BAG</button>
+                        <button class="form-button" name="add" type="submit">ADD TO BAG</button>
                     </div>
                 </form>
                 <br/>

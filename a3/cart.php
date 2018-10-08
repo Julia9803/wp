@@ -11,6 +11,30 @@
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px black; padding: 1px');
 ?>
+<?php
+    if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
+        if($_POST['qty'] > 0 && check_oid() && check_option()) {
+            $_SESSION['cart'][$_POST['id']]['oid'] = $_POST['oid'];
+            $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
+        }
+    }
+
+    function check_oid() {
+        if(strlen($_POST['oid']) != 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function check_option() {
+        if($_SESSION['products'][$_POST['id']]['Option'] = $_POST['oid']) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
