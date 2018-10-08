@@ -59,6 +59,7 @@
 
     <?php
     function this_id_actually_exists($id) {
+        echo 'this_id_actually_exists:' + isset($products[$id]);
         return isset($products[$id]);
     }
 
@@ -118,8 +119,8 @@
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>'.$products['M001']['Title'].'</h2>
                     <p>'.$products['M001']['Description'].'</p>
-                    <p class="price">"$" '.$products['M001']['Price']. '</p>
-                    <a href="product.php?id=M001">see more...</a>
+                    <p class="price">$ '.$products['M001']['Price']. '</p>
+                    <a href="products.php?id=M001">see more...</a>
                 </span>
             </article>
             
@@ -129,7 +130,7 @@
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>'.$products['M002']['Title'].'</h2>
                     <p>'.$products['M002']['Description'].'</p>
-                    <p class="price">"$" '.$products['M002']['Price'].'</p>
+                    <p class="price">$ '.$products['M002']['Price'].'</p>
                     <a href="products.php?id=M002">see more...</a>
                 </span>
             </article>
@@ -140,8 +141,8 @@
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>'.$products['M003']['Title'].'</h2>
                     <p>'.$products['M003']['Description'].'</p>
-                    <p class="price">"$" '.$products['M003']['Price'].'</p>
-                    <a href="product.php?id=M003">see more...</a>
+                    <p class="price">$ '.$products['M003']['Price'].'</p>
+                    <a href="products.php?id=M003">see more...</a>
                 </span>
             </article>
         </section>
@@ -152,8 +153,8 @@
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>' .$products['M004']['Title'].'</h2>
                     <p>' .$products['M004']['Description'].'</p>
-                    <p class="price">"$" '.$products['M004']['Price'].'</p>
-                    <a href="product.php?id=M004">see more...</a>
+                    <p class="price">$ '.$products['M004']['Price'].'</p>
+                    <a href="products.php?id=M004">see more...</a>
                 </span>
             </article>
             
@@ -163,8 +164,8 @@
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>' .$products['M005']['Title'].'</h2>
                     <p>' .$products['M005']['Description'].'</p>
-                    <p class="price">"$" '.$products['M005']['Price'].'</p>
-                    <a href="product.php?id=M005">see more...</a>
+                    <p class="price">$ '.$products['M005']['Price'].'</p>
+                    <a href="products.php?id=M005">see more...</a>
                 </span>
             </article>
             
@@ -174,8 +175,8 @@
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>' .$products['M006']['Title'].'</h2>
                     <p>' .$products['M006']['Description'].'</p>
-                    <p class="price">"$" '.$products['M006']['Price'].'</p>
-                    <a href="product.php?id=M006">see more...</a>
+                    <p class="price">$ '.$products['M006']['Price'].'</p>
+                    <a href="products.php?id=M006">see more...</a>
                 </span>
             </article>
         </section>
