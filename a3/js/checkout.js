@@ -1,6 +1,6 @@
 function validate_cardNumber() {
     var cardNumber = document.getElementById("credit_card").value;
-    cardNumber = str_replace(' ','', cardNumber);
+    cardNumber = cardNumber.replace(/\s+/g,"");
     // alert(cardNumber.length);
     if(cardNumber[0] == "4" && cardNumber.length >= 13 && cardNumber.length <= 16) {
         document.getElementById("visaIcon").style = "display:block";
