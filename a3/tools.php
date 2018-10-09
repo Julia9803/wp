@@ -132,7 +132,6 @@ function validate_expiryDate($expiryDate) {
 
 function saveFile() {
   $now = date('d/m/Y h:i');
-  preShow($now);
   $fp = fopen("orders.txt", "a");
   flock($fp, LOCK_EX);
   foreach ( $_SESSION['cart'] as $purchase ) { 
