@@ -112,7 +112,7 @@
         <section class="titles" id="main-background">
             <article class="box" id="inner-background">
                 <span class="image">
-                    <img class="img-style" src="images/pic01.jpg">
+                    <img class="img-style" src="images/M001.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>'.$products['M001']['Title'].'</h2>
                     <p>'.$products['M001']['Description'].'</p>
@@ -123,7 +123,7 @@
             
             <article class="box" id="inner-background">
                 <span class="image">
-                    <img class="img-style" src="images/pic02.jpg">
+                    <img class="img-style" src="images/M002.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>'.$products['M002']['Title'].'</h2>
                     <p>'.$products['M002']['Description'].'</p>
@@ -134,7 +134,7 @@
             
             <article class="box" id="inner-background">
                 <span class="image">
-                    <img class="img-style" src="images/pic03.jpg">
+                    <img class="img-style" src="images/M003.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>'.$products['M003']['Title'].'</h2>
                     <p>'.$products['M003']['Description'].'</p>
@@ -146,7 +146,7 @@
         <section class="titles" id="main-background">
             <article class="box" id="inner-background">
                 <span class="image">
-                    <img class="img-style" src="images/pic04.jpg">
+                    <img class="img-style" src="images/M004.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>' .$products['M004']['Title'].'</h2>
                     <p>' .$products['M004']['Description'].'</p>
@@ -157,7 +157,7 @@
             
             <article class="box" id="inner-background">
                 <span class="image">
-                    <img class="img-style" src="images/pic05.jpg">
+                    <img class="img-style" src="images/M005.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>' .$products['M005']['Title'].'</h2>
                     <p>' .$products['M005']['Description'].'</p>
@@ -168,7 +168,7 @@
             
             <article class="box" id="inner-background">
                 <span class="image">
-                    <img class="img-style" src="images/pic06.jpg">
+                    <img class="img-style" src="images/M006.jpg">
                     <!-- get this picture only for education use from https://www.sephora.com.au/ -->
                     <h2>' .$products['M006']['Title'].'</h2>
                     <p>' .$products['M006']['Description'].'</p>
