@@ -34,8 +34,10 @@ function styleCurrentNavLink( $css ) {
 }
 
 function validate_name($name) {
+  echo "<h5>\($name)</h5>";
   $pattern_name = "/^[a-zA-Z \-.']{1,100}$/";
   $res = preg_match($pattern_name,$name);
+  echo "<h5>\($res)</h5>";
   if ($res) {
       return true;
   }else {
