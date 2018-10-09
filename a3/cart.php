@@ -99,13 +99,14 @@
             </thead>
             <tbody>
                 <?php
-                    for($i = 1;$i<=$num;$i++){
+                    // for($i = 1;$i<=$num;$i++){
+                        foreach($_SESSION['cart'] as $cartItem){
                     echo 
                     '<tr>
-                        <td>'.$_SESSION['products'][$_SESSION['cart'][$i]['oid']]['title'], $_SESSION['cart'][$i]['oid'].'</td>
-                        <td>'.$_SESSION['cart'][$i]['price'].'</td>
-                        <td>'.$_SESSION['cart'][$i]['qty'].'</td>
-                        <td>'.$_SESSION['cart'][$i]['subtotal'].'</td>
+                        <td>'.$_SESSION['products'][$cartItem['oid']]['title'], $cartItem['oid'].'</td>
+                        <td>'.$cartItem['price'].'</td>
+                        <td>'.$cartItem['qty'].'</td>
+                        <td>'.$cartItem['subtotal'].'</td>
                     </tr>';
                     }
                 ?>

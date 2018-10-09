@@ -11,6 +11,18 @@
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
+<?php
+    $fp = fopen('orders.txt','r'); 
+    if (($headings = fgetcsv($fp, 0, ",")) !== false) { 
+        while ( $cells = fgetcsv($fp, 0, ",") ) { 
+            for ($x=1; $x<count($cells); $x++) {
+                $orders[$cells[0]][$headings[$x]]=$cells[$x]; 
+            }
+        } 
+    }
+    $_SESSION['orders'] = $orders;
+    fclose($fp);
+?>
 <html lang='en'>
   <head>
     <meta charset="utf-8">
@@ -50,25 +62,36 @@
         <table class="u-full-width">
             <thead>
                 <tr>
-                    <th>Product details</th>
-                    <th>Item price</th>
-                    <th>QTY</th>
-                    <th>Total</th>
+                    <th>Purchase Date</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>ID</th>
+                    <th>OID</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Subtotal</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>TOLITO COLLECTION</td>
-                    <td>$119.95</td>
-                    <td>1</td>
-                    <td>$119.95</td>
-                </tr>
-                <tr>
-                    <td>TOLITO COLLECTION</td>
-                    <td>$119.95</td>
-                    <td>1</td>
-                    <td>$119.95</td>
-                </tr>
+                <?php
+                foreach($_SESSION['orders'] as $item) {
+                    echo 
+                    "<tr>
+                        <td>".$item['Purchase Date']."</td>
+                        <td>".$item['Name']."</td>
+                        <td>".$item['Address']."</td>
+                        <td>".$item['Mobile']."</td>
+                        <td>".$item['Email']."</td>
+                        <td>".$item['ID']."</td>
+                        <td>".$item['OID']."</td>
+                        <td>".$item['Quantity']."</td>
+                        <td>".$item['Unit Price']."</td>
+                        <td>".$item['Subtotal']."</td>
+                    </tr>";
+                }
+                ?>
             </tbody>
         </table>
     </div>
