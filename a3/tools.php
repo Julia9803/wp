@@ -33,4 +33,92 @@ function styleCurrentNavLink( $css ) {
     echo "<style>nav a[href$='$filename'] { $css }</style>";
 }
 
+function validate_name($name) {
+  $pattern_name = "/^[a-zA-Z \-.']{1,100}$/";
+  $res = preg_match($pattern_name,$name);
+  if ($res) {
+      return true;
+  }else {
+      return false;
+  }
+  
+}
+
+function validate_email($email) {
+  // $pattern_email = '/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/';
+  // $res = preg_match($pattern,$email);
+  // if($email) {
+  //     return true;
+  // }else {
+  //     return false;
+  // }
+  return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+
+function validate_address($address) {
+  $pattern_address = "/^[a-zA-Z0-9 \/\-.'\n]{1,}$/";
+  $res = preg_match($pattern_address,$name);
+  if ($res) {
+      return true;
+  }else {
+      echo "<h3>validate_address false</h3>";
+      return false;
+  }
+}
+
+function validate_mobilePhone($phoneNumber) {
+  $pattern_phone = '/^(\(04\)|04|\+614)( ?\d){8}$/';
+  $res = preg_match($pattern_phone,$phoneNumber);
+  if ($res) {
+      return true;
+  }else {
+      echo "<h3>validate_mobilePhone false</h3>";
+      return false;
+  }
+}
+
+function validate_creditCard($cardNumber) {
+  $pattern_card = '/^( ?\d){12,19}$/';
+  $res = preg_match($pattern_card,$cardNumber);
+  if ($res) {
+      return true;
+  }else {
+      echo "<h3>validate_creditCard false</h3>";
+      return false;
+  }
+}
+
+function validate_expiryDate($expiryDate) {
+  $date = explode("-",$expiryDate);
+  $year = (int)$date[0];
+  $month = (int)$date[1];
+  $present_year = (int)date("Y");
+  $present_month = (int)date("m");
+ 
+  switch ($present_month){
+      case 12:
+          if($month >= 2 && $year > $present_year) {
+              return true;
+          }else {
+              echo "<h3>validate_expiryDate false</h3>";
+              return false;
+          }
+          break;
+      case 11:
+          if($month >= 1 && $year > $present_year) {
+              return true;
+          }else {
+              echo "<h3>validate_expiryDate false</h3>";
+              return false;
+          }
+          break;
+      default:
+          if($month >= $present_month + 2 && $year >= $present_year) {
+              return true;
+          } else {
+              echo "<h3>validate_expiryDate false</h3>";
+              return false;
+          }
+      }
+}
 ?>

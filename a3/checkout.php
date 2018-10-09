@@ -12,28 +12,16 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
-    function validate_name($name) {
-
-    }
-
-    function validate_email($email) {
-
-    }
-
-    function validate_address($address) {
-
-    }
-
-    function validate_mobilePhone($phoneNumber) {
-
-    }
-
-    function validate_creditCard($cardNumber) {
-
-    }
-
-    function validate_expiryDate($expiryDate) {
-
+    if(isset($_POST['submit'])) {
+        if(validate_name($_POST['name']) &&
+        validate_email($_POST['email']) &&
+        validate_address($_POST['address']) &&
+        validate_mobilePhone($_POST['mobile_phone']) &&
+        validate_creditCard($_POST['credit_card']) &&
+        validate_expiryDate($_POST['expiry_date'])
+        ) {
+            header("reciept.php");
+        }
     }
 ?>
 <html lang='en'>
@@ -77,8 +65,6 @@
         <div class="content-center">
             <div class="row">
                 <div class="six columns">
-                </div>
-                <div class="six columns">
                     <label for="exampleEmailInput">Name</label>
                     <input class="u-full-width" type="text" name="name" required="required"/>
                 </div>
@@ -97,7 +83,7 @@
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Expiry Date</label>
-                    <input class="u-full-width" type="email" name="expiry_date" required="required"/>
+                    <input class="u-full-width" type="date" name="expiry_date" required="required"/>
                 </div>
                 <div class="six columns">
                     <label for="address">Address</label>
