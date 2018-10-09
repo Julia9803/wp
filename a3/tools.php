@@ -61,7 +61,7 @@ function validate_email($email) {
 function validate_address($address) {
   $pattern_address = "/^[a-zA-Z0-9 \/\-.'\n]{1,}$/";
   $res = preg_match($pattern_address,$address);
-  if ($res) {
+  if ($res == 1) {
       return true;
   }else {
       echo "<h3>validate_address false</h3>";
@@ -72,7 +72,7 @@ function validate_address($address) {
 function validate_mobilePhone($phoneNumber) {
   $pattern_phone = '/^(\(04\)|04|\+614)( ?\d){8}$/';
   $res = preg_match($pattern_phone,$phoneNumber);
-  if ($res) {
+  if ($res == 1) {
       return true;
   }else {
       echo "<h3>validate_mobilePhone false</h3>";
@@ -83,7 +83,7 @@ function validate_mobilePhone($phoneNumber) {
 function validate_creditCard($cardNumber) {
   $pattern_card = '/^( ?\d){12,19}$/';
   $res = preg_match($pattern_card,$cardNumber);
-  if ($res) {
+  if ($res == 1) {
       return true;
   }else {
       echo "<h3>validate_creditCard false</h3>";
