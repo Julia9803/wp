@@ -22,7 +22,7 @@
         validate_expiryDate($_POST['expiry_date'])
         ) {
             saveFile();
-            header("Location: reciept.php");
+            // header("Location: reciept.php");
         }else {
             $_SESSION['user'] = "";
         }
