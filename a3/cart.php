@@ -38,7 +38,7 @@
             $_SESSION['cart'][$num]['id'] = $_POST['id'];
             // $_SESSION['cart'][$num]['title'] = $_SESSION['products'][$_POST['id']]['Title'];
             $_SESSION['cart'][$num]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
-            $_SESSION['cart'][$num]['subtotal'] = round($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
+            $_SESSION['cart'][$num]['subtotal'] = number_format($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
 
             echo '<h3> $_SESSION contains:</h3>';
             preShow($_SESSION);
@@ -103,7 +103,7 @@
                         foreach($_SESSION['cart'] as $cartItem){
                     echo 
                     '<tr>
-                        <td>'.$_SESSION['products'][$cartItem['id']]['title'], $cartItem['oid'].'</td>
+                        <td>'.$_SESSION['products'][$cartItem['id']]['Title'], $cartItem['oid'].'</td>
                         <td>'.$cartItem['price'].'</td>
                         <td>'.$cartItem['qty'].'</td>
                         <td>'.$cartItem['subtotal'].'</td>

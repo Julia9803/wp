@@ -12,6 +12,7 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
+    $orders;
     $fp = fopen('orders.txt','r'); 
     if (($headings = fgetcsv($fp, 0, ",")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, ",") ) { 
@@ -21,6 +22,7 @@
         } 
     }
     $_SESSION['orders'] = $orders;
+    preShow($orders);
     fclose($fp);
 ?>
 <html lang='en'>
@@ -34,6 +36,7 @@
     <link id='skeleton' type="text/css" rel="stylesheet" href="css/skeleton.css">
     <link id='normalize' type="text/css" rel="stylesheet" href="css/normalize.css">
     <script src='../wireframe.js'></script>
+    <script src='ja/receipt.js'></script>
   </head>
 
   <body id="background">
@@ -96,7 +99,7 @@
         </table>
     </div>
     <div class="button-center">
-        <button class="button-primary">PRINT</button>
+        <button class="button-primary" onclick="printPage()">PRINT</button>
     </div>
 </main>
 
