@@ -35,9 +35,9 @@ function styleCurrentNavLink( $css ) {
 
 function validate_name($name) {
   echo "<h5>$name</h5>";
-  $pattern_name = "/^[a-zA-Z \-.']{1,100}$/";
+  $pattern_name = '/^[a-zA-Z \-.\']{1,100}$/';
   echo "<h5>$pattern_name</h5>";
-  $res = preg_match('/(1)/',$name);
+  $res = preg_match($pattern_name,$name);
   echo "<h5>$res</h5>";
   if ($res == 1) {
       return true;
@@ -60,7 +60,7 @@ function validate_email($email) {
 
 function validate_address($address) {
   $pattern_address = "/^[a-zA-Z0-9 \/\-.'\n]{1,}$/";
-  $res = preg_match($pattern_address,$name);
+  $res = preg_match($pattern_address,$address);
   if ($res) {
       return true;
   }else {
