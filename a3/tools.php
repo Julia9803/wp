@@ -116,7 +116,9 @@ function validate_expiryDate($expiryDate) {
           }
           break;
       default:
-          if($month >= $present_month + 2 && $year >= $present_year) {
+          if($year > $present_year) {
+            return true;
+          }else if($month >= $present_month + 2 && $year == $present_year) {
               return true;
           } else {
               echo "<h3>validate_expiryDate false</h3>";

@@ -69,6 +69,7 @@
                     <label for="exampleEmailInput">Name</label>
                     <input class="u-full-width" type="text" name="name" required="required"/>
                 </div>
+                <br/>
                 <div class="six columns">
                     <label for="exampleEmailInput">Email</label>
                     <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email" required="required"/>
@@ -79,7 +80,7 @@
                 </div>
                 <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" required="required"/>
+                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left;" required="required"/>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                 </div>
                 <div class="six columns">
