@@ -4,7 +4,8 @@ function preShow( $arr, $returnAsString=false ) {
          if ($returnAsString)
            return $ret;
          else
-echo $ret; }
+          echo $ret; 
+        }
 
 function printMyCode() {
     $lines = file($_SERVER['SCRIPT_FILENAME']);
@@ -135,6 +136,7 @@ function saveFile() {
   flock($fp, LOCK_EX);
   foreach ( $_SESSION['cart'] as $purchase ) { 
     $order =  array_merge( $now, $_SESSION['user'], $purchase );
+    preShow($order);
     fputcsv($fp, $order, ",");
   }
   
