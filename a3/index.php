@@ -78,12 +78,12 @@
         </div>
         <div class="titles">
         <br/>
-        <img class="history-img" src="images/pic01.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic02.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic03.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic04.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic05.jpg" width="200px" height="200px">
-        <img class="history-img" src="images/pic06.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/M001.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/M002.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/M003.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/M004.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/M005.jpg" width="200px" height="200px">
+        <img class="history-img" src="images/M006.jpg" width="200px" height="200px">
         </div>
     </div>
 </main>
