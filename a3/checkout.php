@@ -22,6 +22,8 @@
         validate_expiryDate($_POST['expiry_date'])
         ) {
             header("Location: reciept.php");
+        }else {
+            $_SESSION['user'] = "";
         }
     }
 ?>

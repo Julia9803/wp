@@ -34,14 +34,13 @@ function styleCurrentNavLink( $css ) {
 }
 
 function validate_name($name) {
-  echo "<h5>$name</h5>";
   $pattern_name = '/^[a-zA-Z \-.\']{1,100}$/';
-  echo "<h5>$pattern_name</h5>";
   $res = preg_match($pattern_name,$name);
-  echo "<h5>$res</h5>";
   if ($res == 1) {
+      $_SESSION['user']['name'] = $name;
       return true;
   }else {
+      echo "<h3>validate_name false</h3>";
       return false;
   }
   
@@ -55,6 +54,7 @@ function validate_email($email) {
   // }else {
   //     return false;
   // }
+  $_SESSION['user']['email'] = $email;
   return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
@@ -62,6 +62,7 @@ function validate_address($address) {
   $pattern_address = "/^[a-zA-Z0-9 \/\-.'\n]{1,}$/";
   $res = preg_match($pattern_address,$address);
   if ($res == 1) {
+      $_SESSION['user']['address'] = $address;
       return true;
   }else {
       echo "<h3>validate_address false</h3>";
@@ -73,6 +74,7 @@ function validate_mobilePhone($phoneNumber) {
   $pattern_phone = '/^(\(04\)|04|\+614)( ?\d){8}$/';
   $res = preg_match($pattern_phone,$phoneNumber);
   if ($res == 1) {
+      $_SESSION['user']['mobile'] = $phoneNumber;
       return true;
   }else {
       echo "<h3>validate_mobilePhone false</h3>";
