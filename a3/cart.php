@@ -103,7 +103,7 @@
                         foreach($_SESSION['cart'] as $cartItem){
                     echo 
                     '<tr>
-                        <td>'.$_SESSION['products'][$cartItem['oid']]['title'], $cartItem['oid'].'</td>
+                        <td>'.$_SESSION['products'][$cartItem['id']]['title'], $cartItem['oid'].'</td>
                         <td>'.$cartItem['price'].'</td>
                         <td>'.$cartItem['qty'].'</td>
                         <td>'.$cartItem['subtotal'].'</td>
