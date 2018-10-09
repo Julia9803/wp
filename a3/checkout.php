@@ -90,7 +90,7 @@
                     <label for="exampleEmailInput">Mobile Phone</label>
                     <input class="u-full-width" type="text" name="mobile_phone">
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
                     <input class="u-full-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left">
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
