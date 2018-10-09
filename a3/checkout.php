@@ -13,6 +13,7 @@
 ?>
 <?php
     if(isset($_POST['submit'])) {
+        echo "<h3>isset submit</h3>";
         if(validate_name($_POST['name']) &&
         validate_email($_POST['email']) &&
         validate_address($_POST['address']) &&
@@ -20,7 +21,7 @@
         validate_creditCard($_POST['credit_card']) &&
         validate_expiryDate($_POST['expiry_date'])
         ) {
-            header("reciept.php");
+            header("Location: reciept.php");
         }
     }
 ?>
