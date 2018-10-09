@@ -80,28 +80,28 @@
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="u-full-width" type="text" name="name" require>
+                    <input class="u-full-width" type="text" name="name" required/>
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Email</label>
-                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email" require>
+                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email" required/>
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Mobile Phone</label>
-                    <input class="u-full-width" type="text" name="mobile_phone" require>
+                    <input class="u-full-width" type="text" name="mobile_phone" required/>
                 </div>
                 <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left" require>
+                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left" required/>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Expiry Date</label>
-                    <input class="u-full-width" type="email" name="expiry_date" require>
+                    <input class="u-full-width" type="email" name="expiry_date" required/>
                 </div>
                 <div class="six columns">
                     <label for="address">Address</label>
-                    <textarea class="u-full-width" name="address" require></textarea>
+                    <textarea class="u-full-width" name="address" required></textarea>
                 </div>
                 <div class="six columns">
                     <input class="button-primary" type="submit" value="submit">
