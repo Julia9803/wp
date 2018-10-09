@@ -36,8 +36,9 @@
             $_SESSION['cart'][$num]['oid'] = $_POST['oid'];
             $_SESSION['cart'][$num]['qty'] = $_POST['qty'];
             $_SESSION['cart'][$num]['id'] = $_POST['id'];
-            $_SESSION['cart'][$num]['title'] = $_SESSION['products'][$_POST['id']]['Title'];
+            // $_SESSION['cart'][$num]['title'] = $_SESSION['products'][$_POST['id']]['Title'];
             $_SESSION['cart'][$num]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
+            $_SESSION['cart'][$num]['subtotal'] = round($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
 
             echo '<h3> $_SESSION contains:</h3>';
             preShow($_SESSION);
@@ -101,17 +102,12 @@
                     for($i = 1;$i<=$num;$i++){
                     echo 
                     '<tr>
-                        <td>'.$_SESSION['cart'][$i]['title'], $_SESSION['cart'][$i]['oid'].'</td>
+                        <td>'.$_SESSION['products'][$_SESSION['cart'][$i]['oid']]['title'], $_SESSION['cart'][$i]['oid'].'</td>
                         <td>'.$_SESSION['cart'][$i]['price'].'</td>
                         <td>'.$_SESSION['cart'][$i]['qty'].'</td>
-                        <td>'.sum_price($_SESSION['cart'][$i]['price'],$_SESSION['cart'][$i]['qty']).'</td>
+                        <td>'.$_SESSION['cart'][$i]['subtotal'].'</td>
                     </tr>';
                     }
-                ?>
-                <?php
-                function sum_price($price,$qty) {
-                    return round($price*$qty,2);
-                }
                 ?>
             </tbody>
         </table>

@@ -128,4 +128,16 @@ function validate_expiryDate($expiryDate) {
           }
       }
 }
+
+function saveFile() {
+  $now = date('d/m/Y h:i');
+  $fp = fopen("orders.txt", "a");
+  flock($fp, LOCK_EX);
+  foreach ( $_SESSION['cart'] as $purchase ) { 
+    $order =  array_merge( $now, $_SESSION['user'], $purchase );
+    fputcsv($fp, $order, ",");
+  }
+  
+
+}
 ?>

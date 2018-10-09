@@ -21,6 +21,7 @@
         validate_creditCard($_POST['credit_card']) &&
         validate_expiryDate($_POST['expiry_date'])
         ) {
+            saveFile();
             header("Location: reciept.php");
         }else {
             $_SESSION['user'] = "";
