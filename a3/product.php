@@ -3,6 +3,7 @@
     include_once('tools.php');
     //error_reporting(0);
     session_start();
+    $_SESSION = "";
     echo '<h3> $_POST contains:</h3>';
     preShow($_POST);
     echo '<h3> $_SESSION contains:</h3>';

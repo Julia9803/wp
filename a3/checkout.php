@@ -15,9 +15,9 @@
     if(isset($_POST['submit'])) {
         echo "<h3>isset submit</h3>";
         if(validate_name($_POST['name']) &&
-        validate_email($_POST['email']) &&
         validate_address($_POST['address']) &&
         validate_mobilePhone($_POST['mobile_phone']) &&
+        validate_email($_POST['email']) &&
         validate_creditCard($_POST['credit_card']) &&
         validate_expiryDate($_POST['expiry_date'])
         ) {
@@ -72,7 +72,6 @@
                     <label for="exampleEmailInput">Name</label>
                     <input class="u-full-width" type="text" name="name" required="required"/>
                 </div>
-                <br/>
                 <div class="six columns">
                     <label for="exampleEmailInput">Email</label>
                     <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email" required="required"/>

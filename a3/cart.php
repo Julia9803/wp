@@ -33,9 +33,9 @@
         if(check_oid() && check_option()) {
             static $num = 0;
             $num += 1;
+            $_SESSION['cart'][$num]['id'] = $_POST['id'];
             $_SESSION['cart'][$num]['oid'] = $_POST['oid'];
             $_SESSION['cart'][$num]['qty'] = $_POST['qty'];
-            $_SESSION['cart'][$num]['id'] = $_POST['id'];
             // $_SESSION['cart'][$num]['title'] = $_SESSION['products'][$_POST['id']]['Title'];
             $_SESSION['cart'][$num]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
             $_SESSION['cart'][$num]['subtotal'] = number_format($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
