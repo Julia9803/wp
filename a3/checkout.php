@@ -78,7 +78,7 @@
                 </div>
                 <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left" required="required"/>
+                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" required="required"/>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                 </div>
                 <div class="six columns">
@@ -90,7 +90,7 @@
                     <textarea class="u-full-width" name="address" required="required"></textarea>
                 </div>
                 <div class="six columns">
-                    <input class="button-primary" type="submit" value="submit">
+                    <input class="button-primary" type="submit" name="submit" value="submit">
                 </div>
             </div>
         </div>
