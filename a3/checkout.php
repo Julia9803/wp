@@ -80,28 +80,28 @@
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="u-full-width" type="text" name="name">
+                    <input class="u-full-width" type="text" name="name" require>
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Email</label>
-                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email">
+                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email" require>
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Mobile Phone</label>
-                    <input class="u-full-width" type="text" name="mobile_phone">
+                    <input class="u-full-width" type="text" name="mobile_phone" require>
                 </div>
                 <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left">
+                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left" require>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                 </div>
                 <div class="six columns">
                     <label for="exampleEmailInput">Expiry Date</label>
-                    <input class="u-full-width" type="email" name="expiry_date">
+                    <input class="u-full-width" type="email" name="expiry_date" require>
                 </div>
                 <div class="six columns">
                     <label for="address">Address</label>
-                    <textarea class="u-full-width" name="address"></textarea>
+                    <textarea class="u-full-width" name="address" require></textarea>
                 </div>
                 <div class="six columns">
                     <input class="button-primary" type="submit" value="submit">
