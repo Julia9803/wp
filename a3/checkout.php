@@ -92,7 +92,7 @@
                 </div>
                 <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="seventy-five-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left">
+                    <input class="seventy-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left">
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                 </div>
                 <div class="six columns">
