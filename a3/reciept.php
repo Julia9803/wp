@@ -17,8 +17,8 @@
     $fp = fopen('orders.txt','r'); 
     if (($headings = fgetcsv($fp, 0, ",")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, ",") ) { 
-            for ($x=1; $x<count($cells); $x++) {
-                $orders[$cells[0]][$headings[$x]]=$cells[$x]; 
+            for ($x=0; $x<count($cells); $x++) {
+                $orders[$x][$headings[$x]]=$cells[$x]; 
             }
         } 
     }
