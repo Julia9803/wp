@@ -12,6 +12,7 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
+    ini_set("error_reporting","E_ALL & ~E_NOTICE");
     $orders;
     $fp = fopen('orders.txt','r'); 
     if (($headings = fgetcsv($fp, 0, ",")) !== false) { 
