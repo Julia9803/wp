@@ -240,7 +240,7 @@
                 </div>
                 <div class="ten columns">
                     <label for="address">Address</label>
-                    <textarea class="sixty-width" name="address" style="float:left;" value='<?php echo $address; ?>' required="required"></textarea>
+                    <textarea class="sixty-width" name="address" style="float:left;" required="required"><?php echo $address; ?></textarea>
                     <?php echo $address_error; ?>
                 </div>
                 <div class="ten columns">
