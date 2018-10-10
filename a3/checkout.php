@@ -200,7 +200,7 @@
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="u-full-width" type="text" name="name" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" name="name" style="float:left;" required="required"/>
                     <?php echo $name_error; ?>
                 </div>
                 <div class="ten columns">
@@ -226,7 +226,7 @@
                 </div>
                 <div class="ten columns">
                     <label for="address">Address</label>
-                    <textarea class="seventy-four-width" name="address" style="float:left;" required="required"></textarea>
+                    <textarea class="sixty-width" name="address" style="float:left;" required="required"></textarea>
                     <?php echo $address_error; ?>
                 </div>
                 <div class="ten columns">
