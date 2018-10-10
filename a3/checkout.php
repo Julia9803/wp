@@ -21,20 +21,25 @@
 
     if(isset($_POST['submit'])) {
         echo "<h3>isset submit</h3>";
-        if(validate_name($_POST['name']) &&
-        validate_address($_POST['address']) &&
-        validate_mobilePhone($_POST['mobile_phone']) &&
-        validate_email($_POST['email']) &&
-        validate_creditCard($_POST['credit_card']) &&
-        validate_expiryDate($_POST['expiry_date'])
-        ) {
-            saveFile();
-            header("Location: receipt.php");
-        }else {
-            $_SESSION['user'] = "";
-            echo '<h3>name_error</h3>';
-            preShow($GLOBALS['name_error']);
+        if(validate_name($_POST['name'])) {
+            if(validate_address($_POST['address'])) {
+                if(validate_mobilePhone($_POST['mobile_phone'])) {
+                    if(validate_email($_POST['email'])) {
+                        if(validate_creditCard($_POST['credit_card'])) {
+                            if(validate_expiryDate($_POST['expiry_date'])) {
+                                saveFile();
+                                header("Location: receipt.php");
+                            }
+                        }
+                    }
+                }
+            }
         }
+        //                      else {
+        //     $_SESSION['user'] = "";
+        //     echo '<h3>name_error</h3>';
+        //     preShow($GLOBALS['name_error']);
+        // }
     }
 
     function validate_name($name) {
@@ -44,7 +49,7 @@
             $_SESSION['user']['name'] = $name;
             return true;
         }else {
-            $GLOBALS['name_error'] = "<label style='color:red'>validate_name false</label>";
+            $GLOBALS['name_error'] = "<label style='color:red'>please input a valid name</label>";
             return false;
         }
         
