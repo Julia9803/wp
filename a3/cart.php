@@ -27,17 +27,14 @@
 <?php
     if(isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
         if(check_oid() && check_option()) {
-            static $num = 0;
-            $num += 1;
-            $_SESSION['cart'][$num]['id'] = $_POST['id'];
-            $_SESSION['cart'][$num]['oid'] = $_POST['oid'];
-            $_SESSION['cart'][$num]['qty'] = $_POST['qty'];
-            // $_SESSION['cart'][$num]['title'] = $_SESSION['products'][$_POST['id']]['Title'];
-            $_SESSION['cart'][$num]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
-            $_SESSION['cart'][$num]['subtotal'] = number_format($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
-
-            echo '<h3> $_SESSION contains:</h3>';
-            preShow($_SESSION);
+            // static $num = 0;
+            // $num += 1;
+            $id = $_POST['id'] + $_POST['oid'];
+            $_SESSION['cart'][$id]['id'] = $_POST['id'];
+            $_SESSION['cart'][$id]['oid'] = $_POST['oid'];
+            $_SESSION['cart'][$id]['qty'] = $_POST['qty'];
+            $_SESSION['cart'][$id]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
+            $_SESSION['cart'][$id]['subtotal'] = number_format($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
         }
     }
 ?>
