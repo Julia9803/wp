@@ -64,15 +64,18 @@
     </div>
     <div class="letter_head">
         <!-- <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3> -->
-        <h5>Fantastic Makeup</h5>
-        <h5>551 Swanston St</h5>
-        <h5>Melbourne, Victoria</h5>
+        <p>Fantastic Makeup</p>
+        <p>551 Swanston St</p>
+        <p>Melbourne, Victoria 3053</p>
         <br/>
-        <h5 id="current_date"></h5>
+        <p id="current_date"></p>
         <br/>
-        <h5>Mr./Ms. <?php echo $_SESSION['user']['name'] ?></h5>
-        <h5><?php echo $_SESSION['user']['address'] ?></h5>
+        <p>Mr./Ms. <?php echo $_SESSION['user']['name'] ?></p>
+        <p><?php echo $_SESSION['user']['address'] ?></p>
         <br/>
+    </div>
+    <div class="middle-title">
+      <p>Order Sheet</p>
     </div>
     <div class="table">
         <table class="u-full-width">
