@@ -23,7 +23,7 @@ function check(){
 function changeSubtotal(){
     var qty = document.getElementById("qty").value;
     qty = parseFloat(qty);
-    var price = String(document.getElementById("price").value);
+    var price = String(document.getElementById("price").innerText);
     alert("price: " + price);
     price = parseFloat(price.substr(1));
     var subtotal = qty*price;
