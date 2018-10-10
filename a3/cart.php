@@ -68,7 +68,7 @@
 
     <header class="opacity">
         <div>
-            <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
+            <h2><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2>
         </div>
     </header>
 

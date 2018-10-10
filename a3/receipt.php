@@ -45,7 +45,7 @@
 
     <!-- <header>
         <div>
-            <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
+            <h2><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2>
         </div>
     </header> -->
 
@@ -63,7 +63,7 @@
       <h2>Receipt</h2>
     </div>
     <div class="letter_head">
-        <!-- <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3> -->
+        <!-- <h2><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2> -->
         <p>Fantastic Makeup</p>
         <p>551 Swanston St</p>
         <p>Melbourne, Victoria 3053</p>
