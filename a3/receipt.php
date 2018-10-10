@@ -43,11 +43,11 @@
 
   <body>
 
-    <header>
+    <!-- <header>
         <div>
             <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
         </div>
-    </header>
+    </header> -->
 
 <!-- <nav class="nav">
   <a href="products.php" target="_self">Products</a> |
@@ -61,6 +61,23 @@
 <main>
     <div class="middle-title">
       <h2>Receipt</h2>
+    </div>
+    <div>
+        <!-- <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3> -->
+        <h5>Fantastic Makeup</h5>
+        <h5>551 Swanston St</h5>
+        <h5>Melbourne, Victoria</h5>
+        <br/>
+        <br/>
+        <h5 id="current_date"></h5>
+        <br/>
+        <br/>
+        <h5>Mr./Ms. <?php echo $_SESSION['user']['name'] ?></h5>
+        <h5><?php echo $_SESSION['user']['address'] ?></h5>
+        <br/>
+        <br/>
+
+
     </div>
     <div class="table">
         <table class="u-full-width">
