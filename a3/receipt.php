@@ -59,7 +59,7 @@
 
 <main>
     <div class="middle-title">
-      <h2 clss="receipt_title_font">Receipt</h2>
+      <h2 class="receipt_title_font">Receipt</h2>
     </div>
     <div class="letter_head">
         <!-- <h2 class="brand_font"><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2> -->
