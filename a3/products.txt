@@ -1,7 +1,7 @@
 ID	OID	Title	Description	Option	Price
-M001	LRG	Marc Jacobs Beauty	Re(marc)able Full Cover Foundation Concentrate	light nude dark	80.00
-M002	SML	ZOEVA	Screen Queen Highlighter Palette	light nude dark	25.00
-M003	SML	Make Up For Ever	Mist & Fix Setting Spray	light nude dark	19.00
-M004	LRG	ZOEVA	Blush Palette	light nude dark	36.00
-M005	LRG	Anastasia Beverly Hills	Soft Glam Eye Shadow Palette	light nude dark	75.00
-M006	LRG	IT Cosmetics	Your Skin But Better CC Cream SPF 50+	light nude dark	61.00
+M001	LIGHT NUDE DARK	Marc Jacobs Beauty	Re(marc)able Full Cover Foundation Concentrate	light nude dark	80.00
+M002	LIGHT NUDE DARK	ZOEVA	Screen Queen Highlighter Palette	light nude dark	25.00
+M003	LIGHT NUDE DARK	Make Up For Ever	Mist & Fix Setting Spray	light nude dark	19.00
+M004	LIGHT NUDE DARK	ZOEVA	Blush Palette	light nude dark	36.00
+M005	LIGHT NUDE DARK	Anastasia Beverly Hills	Soft Glam Eye Shadow Palette	light nude dark	75.00
+M006	LIGHT NUDE DARK	IT Cosmetics	Your Skin But Better CC Cream SPF 50+	light nude dark	61.00

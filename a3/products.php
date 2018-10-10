@@ -16,7 +16,7 @@
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
             for ($x=1; $x<count($cells); $x++) {
-                if($headings[$x] == "Option") {
+                if($headings[$x] == "Option" || $headings[$x] == "OID") {
                     $products[$cells[0]][$headings[$x]]= explode(" ",$cells[$x]);
                 }else {
                     $products[$cells[0]][$headings[$x]]=$cells[$x];
@@ -93,9 +93,9 @@
                  <div class="detail-display">
                      <label>OPTION</label>
                      <select name="oid">
-                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'][0].'</option>
-                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'][1].'</option>
-                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'][2].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'][0].'">'.$_SESSION['products'][$_GET['id']]['Option'][0].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'][1].'">'.$_SESSION['products'][$_GET['id']]['Option'][1].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'][2].'">'.$_SESSION['products'][$_GET['id']]['Option'][2].'</option>
                      </select>
                     </div>
                     <div class="detail-display">
