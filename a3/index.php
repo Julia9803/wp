@@ -35,7 +35,7 @@
     </div>
 </header>
 
-<nav>
+<nav class="nav">
   <a href="products.php" target="_self">Products</a> | 
   <a href="login.php" target="_self">Login</a> | 
   <a href="index.php" target="_self">Profile</a> | 
