@@ -16,7 +16,21 @@
     $card_error = "";
     $date_error = "";
 
+    $name = "";
+    $address = "";
+    $mobile_phone = "";
+    $email = "";
+    $credit_card = "";
+    $expiry_date = "";
+
     if(isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $address = $_POST['address'];
+        $mobile_phone = $_POST['mobile_phone'];
+        $email = $_POST['email'];
+        $credit_card = $_POST['credit_card'];
+        $expiry_date = $_POST['expiry_date'];
+
         echo "<h3>isset submit</h3>";
         validate_name($_POST['name']);
         validate_address($_POST['address']);
@@ -200,33 +214,33 @@
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="sixty-width" type="text" name="name" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" name="name" style="float:left;" value='<?php echo $name; ?>' required="required"/>
                     <?php echo $name_error; ?>
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Email</label>
-                    <input class="sixty-width" type="email" placeholder="test@mailbox.com" name="email" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="email" placeholder="test@mailbox.com" name="email" style="float:left;" value='<?php echo $email; ?>' required="required"/>
                     <?php echo $email_error; ?>
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Mobile Phone</label>
-                    <input class="sixty-width" type="text" name="mobile_phone" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" name="mobile_phone" style="float:left;" value='<?php echo $mobile_phone; ?>' required="required"/>
                     <?php echo $mobile_error; ?>
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="sixty-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left;" value='<?php echo $credit_card; ?>' required="required"/>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                     <?php echo $card_error; ?>
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Expiry Date</label>
-                    <input class="sixty-width" type="date" name="expiry_date" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="date" name="expiry_date" style="float:left;" value='<?php echo $expiry_date; ?>' required="required"/>
                     <?php echo $date_error; ?>
                 </div>
                 <div class="ten columns">
                     <label for="address">Address</label>
-                    <textarea class="sixty-width" name="address" style="float:left;" required="required"></textarea>
+                    <textarea class="sixty-width" name="address" style="float:left;" value='<?php echo $address; ?>' required="required"></textarea>
                     <?php echo $address_error; ?>
                 </div>
                 <div class="ten columns">
