@@ -24,10 +24,10 @@ function changeSubtotal(){
     var qty = document.getElementById("qty").value;
     qty = parseFloat(qty);
     var price = String(document.getElementById("price").innerText);
-    alert("price: " + price);
+    // alert("price: " + price);
     price = parseFloat(price.substr(1));
     var subtotal = qty*price;
     subtotal = subtotal.toFixed(2);
-    alert(subtotal);
-    document.getElementById("subtotal").value = "$" + subtotal;
+    // alert(subtotal);
+    document.getElementById("subtotal").innerText = "$" + subtotal;
 }
