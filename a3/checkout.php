@@ -12,6 +12,13 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
+    global $name_error;
+    global $address_error;
+    global $mobile_error;
+    global $email_error;
+    global $card_error;
+    global $date_error;
+
     if(isset($_POST['submit'])) {
         echo "<h3>isset submit</h3>";
         if(validate_name($_POST['name']) &&
@@ -21,13 +28,6 @@
         validate_creditCard($_POST['credit_card']) &&
         validate_expiryDate($_POST['expiry_date'])
         ) {
-            $name_error = "";
-            $address_error = "";
-            $mobile_error = "";
-            $email_error = "";
-            $card_error = "";
-            $date_error = "";
-            
             saveFile();
             header("Location: receipt.php");
         }else {
