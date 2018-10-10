@@ -3,7 +3,7 @@
     include_once('tools.php');
     //error_reporting(0);
     session_start();
-    $_SESSION = "";
+    // $_SESSION = "";
 ?>
 <?php
     ini_set("error_reporting","E_ALL & ~E_NOTICE"); 
