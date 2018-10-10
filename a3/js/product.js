@@ -26,6 +26,7 @@ function changeSubtotal(){
     var price = document.getElementById("price").value;
     price = parseFloat(price.substr(1));
     var subtotal = qty*price;
-    subtotal.toFixed(2);
+    subtotal = subtotal.toFixed(2);
+    alert(subtotal);
     document.getElementById("subtotal").value = "$" + subtotal;
 }
