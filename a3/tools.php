@@ -36,7 +36,7 @@ function styleCurrentNavLink( $css ) {
 
 function saveFile() {
   $now = date('d/m/Y h:i');
-  $title = "Purchase Date,Name,Address,Mobile,Email,ID,OID,Quantity,Unit Price,Subtotal";
+  $title = ["Purchase Date","Name","Address","Mobile","Email","ID","OID","Quantity","Unit Price","Subtotal"];
   $fp = fopen("orders.txt", "w");
   flock($fp, LOCK_EX);
   fputcsv($fp, $title, ",");
