@@ -33,7 +33,7 @@
         }else {
             $_SESSION['user'] = "";
             echo '<h3>name_error</h3>';
-            preShow($name_error);
+            preShow($GLOBALS['name_error']);
         }
     }
 
@@ -60,7 +60,7 @@
         // }
         $_SESSION['user']['email'] = $email;
         if(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
-            $email_error = "<label style='color:red'>please input a valid email</label>";
+            $GLOBALS['email_error'] = "<label style='color:red'>please input a valid email</label>";
             return false;
         } else {
             return true;
@@ -74,7 +74,7 @@
             $_SESSION['user']['address'] = $address;
             return true;
         }else {
-            $address_error = "<label style='color:red'>please input a valid address</label>";
+            $GLOBALS['address_error'] = "<label style='color:red'>please input a valid address</label>";
             echo "<h3>validate_address false</h3>";
             return false;
         }
@@ -87,7 +87,7 @@
             $_SESSION['user']['mobile'] = $phoneNumber;
             return true;
         }else {
-              $mobile_error = "<label style='color:red'>please input a valid mobile phone number started with +614 or 04 or (04)</label>";
+            $GLOBALS['mobile_error'] = "<label style='color:red'>please input a valid mobile phone number started with +614 or 04 or (04)</label>";
             echo "<h3>validate_mobilePhone false</h3>";
             return false;
         }
@@ -99,7 +99,7 @@
         if ($res == 1) {
             return true;
         }else {
-            $card_error = "<label style='color:red'>please input a valid credit card number within 12 to 19 number digits</label>";
+            $GLOBALS['card_error'] = "<label style='color:red'>please input a valid credit card number within 12 to 19 number digits</label>";
             echo "<h3>validate_creditCard false</h3>";
             return false;
         }
@@ -117,7 +117,7 @@
                 if($month >= 2 && $year > $present_year) {
                     return true;
                 }else {
-                    $date_error = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
+                    $GLOBALS['date_error'] = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
                     echo "<h3>validate_expiryDate false</h3>";
                     return false;
                 }
@@ -126,7 +126,7 @@
                 if($month >= 1 && $year > $present_year) {
                     return true;
                 }else {
-                    $date_error = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
+                    $GLOBALS['date_error'] = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
                     echo "<h3>validate_expiryDate false</h3>";
                     return false;
                 }
@@ -137,7 +137,7 @@
                 }else if($month >= $present_month + 2 && $year == $present_year) {
                     return true;
                 } else {
-                    $date_error = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
+                    $GLOBALS['date_error'] = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
                     echo "<h3>validate_expiryDate false</h3>";
                     return false;
                 }
