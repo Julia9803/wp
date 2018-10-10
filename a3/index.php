@@ -9,10 +9,10 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
-    echo '<h3> $_POST contains:</h3>';
-    preShow($_POST);
-    echo '<h3> $_SESSION contains:</h3>';
-    preShow($_SESSION);
+    // echo '<h3> $_POST contains:</h3>';
+    // preShow($_POST);
+    // echo '<h3> $_SESSION contains:</h3>';
+    // preShow($_SESSION);
 ?>
 <html lang='en'>
   <head>
@@ -31,7 +31,7 @@
 
 <header class="opacity">
   <div>
-    <h2><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2>
+    <h2 class="brand_font"><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2>
     </div>
 </header>
 

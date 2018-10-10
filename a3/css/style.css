@@ -1,4 +1,12 @@
 /* Insert your styles here */
+@font-face {
+    font-family: 'Signarita Zhai Rhianne';
+    src: url('../font/Signarita\ Zhai\ Rhianne.ttf');
+}
+.brand_font {
+    font-family: 'Signarita Zhai Rhianne';
+}
+
 #main-background {
     background-color: #e9ecf3;
 }

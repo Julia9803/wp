@@ -8,10 +8,10 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
-    echo '<h3> $_POST contains:</h3>';
-    preShow($_POST);
-    echo '<h3> $_SESSION contains:</h3>';
-    preShow($_SESSION);
+    // echo '<h3> $_POST contains:</h3>';
+    // preShow($_POST);
+    // echo '<h3> $_SESSION contains:</h3>';
+    // preShow($_SESSION);
 ?>
 <html lang='en'>
   <head>
@@ -29,7 +29,7 @@
   <body id="background">
     <header class="opacity">
         <div>
-            <h2><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2>
+            <h2 class="brand_font"><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h2>
         </div>
     </header>
 
@@ -73,9 +73,9 @@
     <footer class="footer">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Yubin Gao, s3739865.</div>
+      </script> Yubin Gao, s3739865,A3-s3739865.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+      <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
 
   </body>
