@@ -196,40 +196,40 @@
     <form action="checkout.php" method="post">
         <div class="content-center">
             <div class="row">
-                <div class="eight columns">
+                <div class="ten columns">
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="seventy-four-width" type="text" name="name" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" name="name" style="float:left;" required="required"/>
                     <?php echo $name_error; ?>
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <label for="exampleEmailInput">Email</label>
-                    <input class="seventy-four-width" type="email" placeholder="test@mailbox.com" name="email" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="email" placeholder="test@mailbox.com" name="email" style="float:left;" required="required"/>
                     <?php echo $email_error; ?>
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <label for="exampleEmailInput">Mobile Phone</label>
-                    <input class="seventy-four-width" type="text" name="mobile_phone" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" name="mobile_phone" style="float:left;" required="required"/>
                     <?php echo $mobile_error; ?>
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <label for="exampleEmailInput">Credit Card</label>
-                    <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left;" required="required"/>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
                     <?php echo $card_error; ?>
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <label for="exampleEmailInput">Expiry Date</label>
-                    <input class="seventy-four-width" type="date" name="expiry_date" style="float:left;" required="required"/>
+                    <input class="sixty-width" type="date" name="expiry_date" style="float:left;" required="required"/>
                     <?php echo $date_error; ?>
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <label for="address">Address</label>
                     <textarea class="seventy-four-width" name="address" style="float:left;" required="required"></textarea>
                     <?php echo $address_error; ?>
                 </div>
-                <div class="eight columns">
+                <div class="ten columns">
                     <input class="button-primary" type="submit" name="submit" value="submit">
                 </div>
             </div>
