@@ -91,8 +91,8 @@
                         <td>".$item['ID']."</td>
                         <td>".$item['OID']."</td>
                         <td>".$item['Quantity']."</td>
-                        <td>".$item['Unit Price']."</td>
-                        <td>".$item['Subtotal']."</td>
+                        <td style='color:red'>$".$item['Unit Price']."</td>
+                        <td style='color:red'>$".$item['Subtotal']."</td>
                     </tr>";
                 }
                 ?>

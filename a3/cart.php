@@ -102,9 +102,9 @@
                     echo 
                     '<tr>
                         <td>'.$_SESSION['products'][$cartItem['id']]['Title'].'&nbsp;'.$cartItem['oid'].'</td>
-                        <td>'.$cartItem['price'].'</td>
+                        <td style="color:red">$'.$cartItem['price'].'</td>
                         <td>'.$cartItem['qty'].'</td>
-                        <td>'.$cartItem['subtotal'].'</td>
+                        <tdstyle="color:red">$'.$cartItem['subtotal'].'</td>
                     </tr>';
                     }
                 ?>

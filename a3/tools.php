@@ -42,13 +42,8 @@ function saveFile() {
   fputcsv($fp, $title, ",");
   foreach ( $_SESSION['cart'] as $purchase ) { 
     $order =  array_merge( array("purchase date" => $now), $_SESSION['user'], $purchase );
-    echo "<h3>purchase</h3>";
-    preShow($order);
     fputcsv($fp, $order, ",");
   }
   fclose($fp);
-  if(isset($_SESSION['order'])) {
-    unset($_SESSION['order']);
-  }
 }
 ?>
