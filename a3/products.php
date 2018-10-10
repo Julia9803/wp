@@ -16,7 +16,11 @@
     if (($headings = fgetcsv($fp, 0, "\t")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, "\t") ) { 
             for ($x=1; $x<count($cells); $x++) {
-                $products[$cells[0]][$headings[$x]]=$cells[$x]; 
+                if($headings[$x] == "Option") {
+                    $products[$cells[0]][$headings[$x]]= explode(" ",$cells[$x]);
+                }else {
+                    $products[$cells[0]][$headings[$x]]=$cells[$x];
+                } 
             }
         } 
     } 
@@ -29,7 +33,7 @@
 <html lang='en'>
   <head>
     <meta charset="utf-8">
-    <title>Assignment 2</title>
+    <title>Assignment 3</title>
     
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
@@ -89,7 +93,9 @@
                  <div class="detail-display">
                      <label>OPTION</label>
                      <select name="oid">
-                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'][0].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'][1].'</option>
+                         <option value="'.$_SESSION['products'][$_GET['id']]['OID'].'">'.$_SESSION['products'][$_GET['id']]['Option'][2].'</option>
                      </select>
                     </div>
                     <div class="detail-display">

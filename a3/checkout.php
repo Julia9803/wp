@@ -68,6 +68,8 @@
         <div class="content-center">
             <div class="row">
                 <div class="six columns">
+                </div>
+                <div class="six columns">
                     <label for="exampleEmailInput">Name</label>
                     <input class="u-full-width" type="text" name="name" required="required"/>
                 </div>
