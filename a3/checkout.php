@@ -12,12 +12,12 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
-    $name_error;
-    $address_error;
-    $mobile_error;
-    $email_error;
-    $card_error;
-    $date_error;
+    $name_error = "";
+    $address_error = "";
+    $mobile_error = "";
+    $email_error = "";
+    $card_error = "";
+    $date_error = "";
 
     if(isset($_POST['submit'])) {
         echo "<h3>isset submit</h3>";
