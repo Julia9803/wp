@@ -169,7 +169,7 @@
     padding: 30px 30px 30px;
     border-width: 2px;
     border-color: aliceblue;
-    border-radius: 10%;
+    border-radius: 25px;
     background-color: lightsalmon;
 }
 
@@ -215,4 +215,8 @@
 }
 .letter_head {
     padding-left: 5%;
+}
+
+.span {
+    padding: 0 9px;
 }

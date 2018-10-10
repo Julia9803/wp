@@ -34,12 +34,12 @@
     </header>
 
     <nav class="nav">
-  <a href="products.php" target="_self"><span>Products<span></a>  
-  <a href="login.php" target="_self"><span>Login<span></a>  
-  <a href="index.php" target="_self"><span>Profile<span></a>  
-  <a href="cart.php" target="_self"><span>Cart<span></a>  
-  <a href="checkout.php" target="_self"><span>Checkout<span></a>  
-  <a href="receipt.php" target="_self"><span>Receipt<span></a>  
+  <a href="products.php" target="_self"><span class="span">Products</span></a>  
+  <a href="login.php" target="_self"><span class="span">Login</span></a>  
+  <a href="index.php" target="_self"><span class="span">Profile</span></a>  
+  <a href="cart.php" target="_self"><span class="span">Cart</span></a>  
+  <a href="checkout.php" target="_self"><span class="span">Checkout</span></a>  
+  <a href="receipt.php" target="_self"><span class="span">Receipt</span></a>  
 </nav>
 
       
