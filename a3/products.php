@@ -103,7 +103,7 @@
                     <div class="detail-display">
                         <label>QTY</label>
                         <input type="button" id="minus" value="-" onclick="clickMinus()">
-                        <input id="qty" name="qty" type="text" value="1">
+                        <input id="qty" name="qty" type="text" value="1" onchange="changeSubtotal()">
                         <input type="button" id="plus" value="+" onclick="clickPlus()">
                     </div>
                     <div class="detail-display">
