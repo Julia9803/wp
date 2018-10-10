@@ -12,6 +12,7 @@
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
 ?>
 <?php
+    $has_errors = 0;
     $name_error = "";
     $address_error = "";
     $mobile_error = "";
@@ -27,21 +28,12 @@
         validate_email($_POST['email']);
         validate_creditCard($_POST['credit_card']);
         validate_expiryDate($_POST['expiry_date']);
-        
-        if(validate_name($_POST['name'])) {
-            if(validate_address($_POST['address'])) {
-                if(validate_mobilePhone($_POST['mobile_phone'])) {
-                    if(validate_email($_POST['email'])) {
-                        if(validate_creditCard($_POST['credit_card'])) {
-                            if(validate_expiryDate($_POST['expiry_date'])) {
-                                saveFile();
-                                header("Location: receipt.php");
-                            }
-                        }
-                    }
-                }
-            }
+
+        if($has_errors == 0){
+            saveFile();
+            header("Location: receipt.php");
         }
+                            
         //                      else {
         //     $_SESSION['user'] = "";
         //     echo '<h3>name_error</h3>';
@@ -57,7 +49,7 @@
             return true;
         }else {
             $GLOBALS['name_error'] = "<label style='color:red'>please input a valid name</label>";
-            return false;
+            $GLOBALS['has_errors'] ++;
         }
         
       }
@@ -73,6 +65,7 @@
         $_SESSION['user']['email'] = $email;
         if(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
             $GLOBALS['email_error'] = "<label style='color:red'>please input a valid email</label>";
+            $GLOBALS['has_errors'] ++;
             return false;
         } else {
             return true;
@@ -88,6 +81,7 @@
         }else {
             $GLOBALS['address_error'] = "<label style='color:red'>please input a valid address</label>";
             echo "<h3>validate_address false</h3>";
+            $GLOBALS['has_errors'] ++;
             return false;
         }
       }
@@ -101,6 +95,7 @@
         }else {
             $GLOBALS['mobile_error'] = "<label style='color:red'>please input a valid mobile phone number started with +614 or 04 or (04)</label>";
             echo "<h3>validate_mobilePhone false</h3>";
+            $GLOBALS['has_errors'] ++;
             return false;
         }
       }
@@ -113,6 +108,7 @@
         }else {
             $GLOBALS['card_error'] = "<label style='color:red'>please input a valid credit card number within 12 to 19 number digits</label>";
             echo "<h3>validate_creditCard false</h3>";
+            $GLOBALS['has_errors'] ++;
             return false;
         }
       }
@@ -131,6 +127,7 @@
                 }else {
                     $GLOBALS['date_error'] = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
                     echo "<h3>validate_expiryDate false</h3>";
+                    $GLOBALS['has_errors'] ++;
                     return false;
                 }
                 break;
@@ -140,6 +137,7 @@
                 }else {
                     $GLOBALS['date_error'] = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
                     echo "<h3>validate_expiryDate false</h3>";
+                    $GLOBALS['has_errors'] ++;
                     return false;
                 }
                 break;
@@ -151,6 +149,7 @@
                 } else {
                     $GLOBALS['date_error'] = "<label style='color:red'>please input a valid expiry date. card cannot expire within one month of purchase</label>";
                     echo "<h3>validate_expiryDate false</h3>";
+                    $GLOBALS['has_errors'] ++;
                     return false;
                 }
             }
