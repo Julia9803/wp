@@ -21,6 +21,13 @@
         validate_creditCard($_POST['credit_card']) &&
         validate_expiryDate($_POST['expiry_date'])
         ) {
+            $name_error = "";
+            $address_error = "";
+            $mobile_error = "";
+            $email_error = "";
+            $card_error = "";
+            $date_error = "";
+            
             saveFile();
             header("Location: receipt.php");
         }else {
@@ -67,34 +74,40 @@
     <form action="checkout.php" method="post">
         <div class="content-center">
             <div class="row">
-                <div class="six columns">
+                <div class="eight columns">
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="u-full-width" type="text" name="name" required="required"/>
+                    <input class="seventy-four-width" type="text" name="name" style="float:left;" required="required"/>
+                    <?php echo $name_error; ?>
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <label for="exampleEmailInput">Email</label>
-                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" name="email" required="required"/>
+                    <input class="seventy-four-width" type="email" placeholder="test@mailbox.com" name="email" style="float:left;" required="required"/>
+                    <?php echo $email_error; ?>
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <label for="exampleEmailInput">Mobile Phone</label>
-                    <input class="u-full-width" type="text" name="mobile_phone" required="required"/>
+                    <input class="seventy-four-width" type="text" name="mobile_phone" style="float:left;" required="required"/>
+                    <?php echo $mobile_error; ?>
                 </div>
                 <div class="eight columns">
                     <label for="exampleEmailInput">Credit Card</label>
                     <input class="seventy-four-width" type="text" id="credit_card" name="credit_card" oninput="validate_cardNumber()" style="float:left;" required="required"/>
                     <img src="images/visa.png" class="twenty-width" id="visaIcon" style="display:none" />
+                    <?php echo $card_error; ?>
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <label for="exampleEmailInput">Expiry Date</label>
-                    <input class="u-full-width" type="date" name="expiry_date" required="required"/>
+                    <input class="seventy-four-width" type="date" name="expiry_date" style="float:left;" required="required"/>
+                    <?php echo $date_error; ?>
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <label for="address">Address</label>
-                    <textarea class="u-full-width" name="address" required="required"></textarea>
+                    <textarea class="seventy-four-width" name="address" style="float:left;" required="required"></textarea>
+                    <?php echo $address_error; ?>
                 </div>
-                <div class="six columns">
+                <div class="eight columns">
                     <input class="button-primary" type="submit" name="submit" value="submit">
                 </div>
             </div>
