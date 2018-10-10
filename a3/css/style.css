@@ -237,3 +237,9 @@ h2,h3 {
 .span {
     padding: 0 9px;
 }
+
+.receipt_style {
+    margin-bottom: 0;
+    line-height: 0;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

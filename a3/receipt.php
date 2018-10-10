@@ -41,7 +41,7 @@
     <script src='js/receipt.js'></script>
   </head>
 
-  <body>
+  <body class="receipt_style">
 
     <!-- <header>
         <div>
