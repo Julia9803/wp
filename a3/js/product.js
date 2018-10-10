@@ -1,12 +1,14 @@
 function clickMinus(){
     if(parseInt(document.getElementById("qty").value) - 1 >= 0)
         document.getElementById("qty").value = parseInt(document.getElementById("qty").value) - 1;
+    document.getElementById("subtotal").value = "$" + parseFloat(document.getElementById("qty").value)*parseFloat(document.getElementById("price").value).toFixed(2);
     }
         
 function clickPlus(){
     if(parseInt(document.getElementById("qty").value) + 1 >= 0)
         document.getElementById("qty").value =
         parseInt(document.getElementById("qty").value) + 1;
+    document.getElementById("subtotal").value = "$" + parseFloat(document.getElementById("qty").value)*parseFloat(document.getElementById("price").value).toFixed(2);
     }
 
 function check(){

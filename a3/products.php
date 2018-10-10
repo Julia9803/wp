@@ -90,7 +90,7 @@
                      <p>'.$_SESSION['products'][$_GET['id']]['Description'].'</p>
                 </div>
                 <div class="detail-display">
-                    <h2 class="price">$'.$_SESSION['products'][$_GET['id']]['Price'].'</h2>
+                    <h2 class="price" id="price">$'.$_SESSION['products'][$_GET['id']]['Price'].'</h2>
                 </div>
                  <div class="detail-display">
                      <label>OPTION</label>
@@ -105,6 +105,10 @@
                         <input type="button" id="minus" value="-" onclick="clickMinus()">
                         <input id="qty" name="qty" type="text" value="1">
                         <input type="button" id="plus" value="+" onclick="clickPlus()">
+                    </div>
+                    <div class="detail-display">
+                        <label>SUBTOTAL</label>
+                        <h3 class="price" id="subtotal">$'.$_SESSION['products'][$_GET['id']]['Price'].'</h3>
                     </div>
                     <div class="detail-display">
                         <button class="form-button" name="add" type="submit">ADD TO BAG</button>
