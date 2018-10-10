@@ -3,10 +3,10 @@
     include_once('tools.php');
     //error_reporting(0);
     session_start();
-    echo '<h3> $_POST contains:</h3>';
-    preShow($_POST);
-    echo '<h3> $_SESSION contains:</h3>';
-    preShow($_SESSION);
+    // echo '<h3> $_POST contains:</h3>';
+    // preShow($_POST);
+    // echo '<h3> $_SESSION contains:</h3>';
+    // preShow($_SESSION);
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
@@ -23,7 +23,7 @@
         } 
     }
     $_SESSION['orders'] = $orders;
-    preShow($orders);
+    // preShow($orders);
     fclose($fp);
 ?>
 <html lang='en'>
@@ -40,27 +40,26 @@
     <script src='js/receipt.js'></script>
   </head>
 
-  <body id="background">
+  <body>
 
-    <header class="opacity">
+    <header>
         <div>
             <h3><img src="images/logo.png" width="70px" height="70px"/>Fantastic Makeup</h3>
         </div>
     </header>
 
-<nav class="nav">
+<!-- <nav class="nav">
   <a href="products.php" target="_self">Products</a> |
-  <a href="product.php" target="_self">Product</a> |
   <a href="login.php" target="_self">Login</a> | 
   <a href="index.php" target="_self">Profile</a> | 
   <a href="cart.php" target="_self">Cart</a> |
   <a href="checkout.php" target="_self">Checkout</a> |
-  <a href="reciept.php" target="_self">Reciept</a> |
-</nav>
+  <a href="receipt.php" target="_self">Receipt</a> |
+</nav> -->
 
-<main id="main-background">
+<main>
     <div class="middle-title">
-      <h2>RECIEPT</h2>
+      <h2>Receipt</h2>
     </div>
     <div class="table">
         <table class="u-full-width">
@@ -99,18 +98,18 @@
             </tbody>
         </table>
     </div>
-    <div class="button-center">
+    <!-- <div class="button-center">
         <button class="button-primary" onclick="printPage()">PRINT</button>
-    </div>
+    </div> -->
 </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
       </script> Yubin Gao, s3739865,A3-s3739865.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
+    </footer> -->
    
-  </body>
+    </body>
 </html>

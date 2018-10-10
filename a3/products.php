@@ -47,13 +47,12 @@
     </header>
 
     <nav>
-        <a href="products.php" target="_self">Products</a> |
-        <a href="product.php" target="_self">Product</a> |
+        <a href="products.php" target="_self">Products</a> |     
         <a href="login.php" target="_self">Login</a> | 
         <a href="index.php" target="_self">Profile</a> | 
         <a href="cart.php" target="_self">Cart</a> |
         <a href="checkout.php" target="_self">Checkout</a> |
-        <a href="reciept.php" target="_self">Reciept</a> |
+        <a href="receipt.php" target="_self">Receipt</a> |
     </nav>
 
     <?php
