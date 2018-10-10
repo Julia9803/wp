@@ -17,13 +17,9 @@
     $fp = fopen('orders.txt','r'); 
     if (($headings = fgetcsv($fp, 0, ",")) !== false) { 
         while ( $cells = fgetcsv($fp, 0, ",") ) { 
+            $head = $cells[0]."_".$cells[1]."_".$cells[5]."_".$cells[6];
             for ($x=0; $x<count($cells); $x++) {
-                $orders[$cells[0]][$headings[$x]]=$cells[$x]; 
-                // if($headings[$x] == "Option" || $headings[$x] == "OID") {
-                //     $products[$cells[0]][$headings[$x]]= explode(" ",$cells[$x]);
-                // }else {
-                //     $products[$cells[0]][$headings[$x]]=$cells[$x];
-                // } 
+                $orders[$head][$headings[$x]]=$cells[$x]; 
             }
         } 
     }
