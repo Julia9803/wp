@@ -200,7 +200,7 @@
                 </div>
                 <div class="ten columns">
                     <label for="exampleEmailInput">Name</label>
-                    <input class="sixty-width" type="text" name="name" style="float:left;" required="required"/>
+                    <input class="u-full-width" type="text" name="name" style="float:left;" required="required"/>
                     <?php echo $name_error; ?>
                 </div>
                 <div class="ten columns">
