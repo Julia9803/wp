@@ -166,13 +166,19 @@
 }
 
 .nav {
-    border-bottom-color: black;
+    margin: 10px 10px 10px;
+    border-width: 2px;
+    border-color: aliceblue;
+    background-color: lightsalmon;
 }
 
 .footer {
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration-color: #fff;
+    background-color: lightsalmon;
 }
 
 .main {
@@ -207,5 +213,5 @@
     width: 20%;
 }
 .letter_head {
-    padding-left: 10%;
+    padding-left: 5%;
 }
