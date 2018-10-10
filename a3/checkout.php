@@ -32,6 +32,8 @@
             header("Location: receipt.php");
         }else {
             $_SESSION['user'] = "";
+            echo '<h3>name_error</h3>';
+            preShow($name_error);
         }
     }
 ?>
