@@ -104,7 +104,7 @@
                         <td>'.$_SESSION['products'][$cartItem['id']]['Title'].'&nbsp;'.$cartItem['oid'].'</td>
                         <td style="color:red">$'.$cartItem['price'].'</td>
                         <td>'.$cartItem['qty'].'</td>
-                        <tdstyle="color:red">$'.$cartItem['subtotal'].'</td>
+                        <td style="color:red">$'.$cartItem['subtotal'].'</td>
                     </tr>';
                     }
                 ?>
