@@ -4,10 +4,6 @@
     //error_reporting(0);
     session_start();
     $_SESSION = "";
-    echo '<h3> $_POST contains:</h3>';
-    preShow($_POST);
-    echo '<h3> $_SESSION contains:</h3>';
-    preShow($_SESSION);
 ?>
 <?php
     ini_set("error_reporting","E_ALL & ~E_NOTICE"); 
@@ -29,6 +25,12 @@
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');
+?>
+<?php
+    echo '<h3> $_POST contains:</h3>';
+    preShow($_POST);
+    echo '<h3> $_SESSION contains:</h3>';
+    preShow($_SESSION);
 ?>
 <html lang='en'>
   <head>
