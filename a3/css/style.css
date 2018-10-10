@@ -9,7 +9,7 @@
     src: url('../font/Rosemary.ttf');
 }
 
-body {
+h2,h3 {
     font-family: 'Rosemary';
 }
 .brand_font {
