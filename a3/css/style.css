@@ -3,6 +3,15 @@
     font-family: 'Signarita Zhai Rhianne';
     src: url('../font/Signarita\ Zhai\ Rhianne.ttf');
 }
+
+@font-face {
+    font-family: 'Rosemary';
+    src: url('../font/Rosemary.ttf');
+}
+
+body {
+    font-family: 'Rosemary';
+}
 .brand_font {
     font-family: 'Signarita Zhai Rhianne';
 }
