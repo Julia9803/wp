@@ -36,13 +36,19 @@ function styleCurrentNavLink( $css ) {
 
 function saveFile() {
   $now = date('d/m/Y h:i');
-  $fp = fopen("orders.txt", "a");
+  $title = "Purchase Date,Name,Address,Mobile,Email,ID,OID,Quantity,Unit Price,Subtotal";
+  $fp = fopen("orders.txt", "w");
   flock($fp, LOCK_EX);
+  fputcsv($fp, $title, ",");
   foreach ( $_SESSION['cart'] as $purchase ) { 
     $order =  array_merge( array("purchase date" => $now), $_SESSION['user'], $purchase );
+    echo "<h3>purchase</h3>";
+    preShow($order);
     fputcsv($fp, $order, ",");
   }
-  $_SESSION['order'] = $order;
   fclose($fp);
+  if(isset($_SESSION['order'])) {
+    unset($_SESSION['order']);
+  }
 }
 ?>

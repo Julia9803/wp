@@ -19,6 +19,11 @@
         while ( $cells = fgetcsv($fp, 0, ",") ) { 
             for ($x=0; $x<count($cells); $x++) {
                 $orders[$cells[0]][$headings[$x]]=$cells[$x]; 
+                // if($headings[$x] == "Option" || $headings[$x] == "OID") {
+                //     $products[$cells[0]][$headings[$x]]= explode(" ",$cells[$x]);
+                // }else {
+                //     $products[$cells[0]][$headings[$x]]=$cells[$x];
+                // } 
             }
         } 
     }
