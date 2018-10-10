@@ -1,14 +1,14 @@
 function clickMinus(){
     if(parseInt(document.getElementById("qty").value) - 1 >= 0)
         document.getElementById("qty").value = parseInt(document.getElementById("qty").value) - 1;
-    document.getElementById("subtotal").value = "$" + parseFloat(document.getElementById("qty").value)*parseFloat(document.getElementById("price").value).toFixed(2);
+        changeSubtotal();
     }
         
 function clickPlus(){
     if(parseInt(document.getElementById("qty").value) + 1 >= 0)
         document.getElementById("qty").value =
         parseInt(document.getElementById("qty").value) + 1;
-    document.getElementById("subtotal").value = "$" + parseFloat(document.getElementById("qty").value)*parseFloat(document.getElementById("price").value).toFixed(2);
+        changeSubtotal();
     }
 
 function check(){
@@ -18,4 +18,14 @@ function check(){
         alert("Sorry! You can't buy items with " + document.getElementById("qty").value + " quantity input.");
         return false;
     }
+}
+
+function changeSubtotal(){
+    var qty = document.getElementById("qty").value;
+    qty = parseFloat(qty);
+    var price = document.getElementById("price").value;
+    price = parseFloat(price.substr(1));
+    var subtotal = qty*price;
+    subtotal.toFixed(2);
+    document.getElementById("subtotal").value = "$" + subtotal;
 }
