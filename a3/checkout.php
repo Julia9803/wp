@@ -21,6 +21,13 @@
 
     if(isset($_POST['submit'])) {
         echo "<h3>isset submit</h3>";
+        validate_name($_POST['name']);
+        validate_address($_POST['address']);
+        validate_mobilePhone($_POST['mobile_phone']);
+        validate_email($_POST['email']);
+        validate_creditCard($_POST['credit_card']);
+        validate_expiryDate($_POST['expiry_date']);
+        
         if(validate_name($_POST['name'])) {
             if(validate_address($_POST['address'])) {
                 if(validate_mobilePhone($_POST['mobile_phone'])) {
