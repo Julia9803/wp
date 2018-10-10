@@ -3,6 +3,7 @@
     include_once('tools.php');
     //error_reporting(0);
     session_start();
+    $_SESSION = "";
 ?>
 <?php
     styleCurrentNavLink('background-color: rgba(255,255,255,0.6); box-shadow: 1px 1px 1px 2px navy;');

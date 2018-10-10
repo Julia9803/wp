@@ -29,12 +29,12 @@
         if(check_oid() && check_option()) {
             // static $num = 0;
             // $num += 1;
-            $id = $_POST['id'] + $_POST['oid'];
+            $id = $_POST['id']."_".$_POST['oid'];
             $_SESSION['cart'][$id]['id'] = $_POST['id'];
             $_SESSION['cart'][$id]['oid'] = $_POST['oid'];
             $_SESSION['cart'][$id]['qty'] = $_POST['qty'];
             $_SESSION['cart'][$id]['price'] = $_SESSION['products'][$_POST['id']]['Price'];
-            $_SESSION['cart'][$id]['subtotal'] = number_format($_SESSION['cart'][$num]['price']*$_POST['qty'],2);
+            $_SESSION['cart'][$id]['subtotal'] = number_format($_SESSION['cart'][$id]['price']*$_POST['qty'],2);
         }
     }
 ?>
