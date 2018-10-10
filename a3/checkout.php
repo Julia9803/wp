@@ -44,7 +44,7 @@
             $_SESSION['user']['name'] = $name;
             return true;
         }else {
-            $name_error = "<label style='color:red'>validate_name false</label>";
+            $GLOBALS['name_error'] = "<label style='color:red'>validate_name false</label>";
             return false;
         }
         
