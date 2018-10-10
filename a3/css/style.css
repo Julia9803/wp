@@ -15,6 +15,9 @@ h2,h3 {
 .brand_font {
     font-family: 'Signarita Zhai Rhianne';
 }
+.receipt_title_font {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 #main-background {
     background-color: #e9ecf3;
