@@ -52,6 +52,7 @@
     }
 
     function validate_name($name) {
+        $name = trim($name);
         $pattern_name = '/^[a-zA-Z \-.\']{1,100}$/';
         $res = preg_match($pattern_name,$name);
         if ($res == 1) {
