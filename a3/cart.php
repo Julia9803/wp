@@ -96,6 +96,7 @@
             </thead>
             <tbody>
                 <?php
+                    $sum_price = 0;
                     if (isset($_SESSION['cart'])){
                         foreach($_SESSION['cart'] as $cartItem){
                     echo 
@@ -105,7 +106,9 @@
                         <td>'.$cartItem['qty'].'</td>
                         <td style="color:red">$'.$cartItem['subtotal'].'</td>
                     </tr>';
+                    $sum_price += $cartItem['price'];
                     }
+                    // to print out a sum
                 }
                 ?>
             </tbody>

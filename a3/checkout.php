@@ -167,10 +167,10 @@
       }
 ?>
 <?php
-    // echo '<h3> $_POST contains:</h3>';
-    // preShow($_POST);
-    // echo '<h3> $_SESSION contains:</h3>';
-    // preShow($_SESSION);
+    echo '<h3> $_POST contains:</h3>';
+    preShow($_POST);
+    echo '<h3> $_SESSION contains:</h3>';
+    preShow($_SESSION);
 ?>
 <html lang='en'>
   <head>
