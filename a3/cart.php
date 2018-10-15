@@ -96,7 +96,7 @@
             </thead>
             <tbody>
                 <?php
-                    // for($i = 1;$i<=$num;$i++){
+                    if (isset($_SESSION['cart'])){
                         foreach($_SESSION['cart'] as $cartItem){
                     echo 
                     '<tr>
@@ -106,6 +106,7 @@
                         <td style="color:red">$'.$cartItem['subtotal'].'</td>
                     </tr>';
                     }
+                }
                 ?>
             </tbody>
         </table>
