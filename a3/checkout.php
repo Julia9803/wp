@@ -84,7 +84,7 @@
       }
       
       function validate_address($address) {
-        $pattern_address = "/^[a-zA-Z0-9 \/\-.'/\n]{1,}$/";
+        $pattern_address = "/^[a-zA-Z0-9 \/\-.'\n]{1,}$/";
         $res = preg_match($pattern_address,$address);
         if ($res == 1) {
             $_SESSION['user']['address'] = $address;
